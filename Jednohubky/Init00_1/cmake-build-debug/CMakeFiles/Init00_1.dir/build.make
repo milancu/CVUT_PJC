@@ -68,15 +68,15 @@ include CMakeFiles/Init00_1.dir/flags.make
 CMakeFiles/Init00_1.dir/main.cpp.obj: CMakeFiles/Init00_1.dir/flags.make
 CMakeFiles/Init00_1.dir/main.cpp.obj: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Vysoka_Skola\3.Semestr\PJC\Projekty\b211_bd6b36pjc\Jednohubky\Init00_1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Init00_1.dir/main.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Init00_1.dir\main.cpp.obj -c D:\Vysoka_Skola\3.Semestr\PJC\Projekty\b211_bd6b36pjc\Jednohubky\Init00_1\main.cpp
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Init00_1.dir\main.cpp.obj -c D:\Vysoka_Skola\3.Semestr\PJC\Projekty\b211_bd6b36pjc\Jednohubky\Init00_1\main.cpp
 
 CMakeFiles/Init00_1.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Init00_1.dir/main.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Vysoka_Skola\3.Semestr\PJC\Projekty\b211_bd6b36pjc\Jednohubky\Init00_1\main.cpp > CMakeFiles\Init00_1.dir\main.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Vysoka_Skola\3.Semestr\PJC\Projekty\b211_bd6b36pjc\Jednohubky\Init00_1\main.cpp > CMakeFiles\Init00_1.dir\main.cpp.i
 
 CMakeFiles/Init00_1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Init00_1.dir/main.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Vysoka_Skola\3.Semestr\PJC\Projekty\b211_bd6b36pjc\Jednohubky\Init00_1\main.cpp -o CMakeFiles\Init00_1.dir\main.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Vysoka_Skola\3.Semestr\PJC\Projekty\b211_bd6b36pjc\Jednohubky\Init00_1\main.cpp -o CMakeFiles\Init00_1.dir\main.cpp.s
 
 # Object files for target Init00_1
 Init00_1_OBJECTS = \

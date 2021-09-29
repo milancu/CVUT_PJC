@@ -62,8 +62,8 @@ UpdateOptions:
 UpdateType: 
 
 # Compiler info
-Compiler: C:/msys64/mingw64/bin/g++.exe
-CompilerVersion: 10.3.0
+Compiler: C:/MinGW/bin/g++.exe
+CompilerVersion: 6.3.0
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 
@@ -80,7 +80,7 @@ MemoryCheckCommandOptions:
 MemoryCheckSuppressionFile: 
 
 # Coverage
-CoverageCommand: C:/msys64/mingw64/bin/gcov.exe
+CoverageCommand: C:/MinGW/bin/gcov.exe
 CoverageExtraFlags: -l
 
 # Testing options

@@ -9,13 +9,11 @@
 D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/tiny-00.cpp
 tiny-00.hpp
 D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/tiny-00.hpp
-sstream
--
-utility
--
 algorithm
 -
-iostream
+ostream
+-
+iomanip
 -
 
 D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/tiny-00.hpp

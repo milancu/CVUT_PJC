@@ -11,30 +11,30 @@
 				<Option working_dir="D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Continuous">
 				<Option working_dir="D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 Continuous"/>
-					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 Continuous"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Nightly">
 				<Option working_dir="D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 Nightly"/>
-					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 Nightly"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tests">
@@ -44,19 +44,19 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0"/>
-					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/x86_64-w64-mingw32"/>
-					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/backward"/>
-					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
-					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
-					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
-					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 tests"/>
-					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 tests"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tests/fast">
@@ -66,59 +66,59 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0"/>
-					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/x86_64-w64-mingw32"/>
-					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/backward"/>
-					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
-					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
-					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
-					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 tests/fast"/>
-					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 tests/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Experimental">
 				<Option working_dir="D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 Experimental"/>
-					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 Experimental"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test">
 				<Option working_dir="D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
-					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
