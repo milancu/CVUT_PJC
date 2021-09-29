@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/HW/InitB/main.cpp
+iostream
+-
+
