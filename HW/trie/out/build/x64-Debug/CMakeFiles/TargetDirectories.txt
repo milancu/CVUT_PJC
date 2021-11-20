@@ -1,0 +1,8 @@
+D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/HW/trie/out/build/x64-Debug/CMakeFiles/tests-stage-1.dir
+D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/HW/trie/out/build/x64-Debug/CMakeFiles/tests-stage-2.dir
+D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/HW/trie/out/build/x64-Debug/CMakeFiles/tests-stage-3.dir
+D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/HW/trie/out/build/x64-Debug/CMakeFiles/tests-stage-4.dir
+D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/HW/trie/out/build/x64-Debug/CMakeFiles/tests-stage-5.dir
+D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/HW/trie/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/HW/trie/out/build/x64-Debug/CMakeFiles/test.dir
+D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/HW/trie/out/build/x64-Debug/CMakeFiles/edit_cache.dir

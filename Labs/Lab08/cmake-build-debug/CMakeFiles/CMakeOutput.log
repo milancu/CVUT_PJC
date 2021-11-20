@@ -1,0 +1,67 @@
+The system is: Windows - 10.0.22499 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Optimalizující kompilátor C/C++ společnosti Microsoft (R) verze 19.29.30137 pro procesory x86
+Copyright (C) Microsoft Corporation. Všechna práva vyhrazena.
+
+CMakeCCompilerId.c
+Microsoft (R) Incremental Linker Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCCompilerId.exe 
+CMakeCCompilerId.obj 
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+
+The C compiler identification is MSVC, found in "D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Labs/Lab08/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/CMakeCCompilerId.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Optimalizující kompilátor C/C++ společnosti Microsoft (R) verze 19.29.30137 pro procesory x86
+Copyright (C) Microsoft Corporation. Všechna práva vyhrazena.
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Labs/Lab08/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.exe"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Labs/Lab08/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/phuon/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.5/bin/ninja/win/ninja.exe cmTC_ce847 && [1/2] Building C object CMakeFiles\cmTC_ce847.dir\CMakeCCompilerABI.c.obj
+Poznámka: Včetně souboru: C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.5\bin\cmake\win\share\cmake-3.21\Modules\CMakeCompilerABI.h
+[2/2] Linking C executable cmTC_ce847.exe
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Labs/Lab08/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/phuon/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.5/bin/ninja/win/ninja.exe cmTC_e8d3f && [1/2] Building CXX object CMakeFiles\cmTC_e8d3f.dir\CMakeCXXCompilerABI.cpp.obj
+Poznámka: Včetně souboru: C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.5\bin\cmake\win\share\cmake-3.21\Modules\CMakeCompilerABI.h
+[2/2] Linking CXX executable cmTC_e8d3f.exe
+
+
+

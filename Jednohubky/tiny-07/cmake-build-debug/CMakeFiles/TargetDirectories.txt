@@ -1,0 +1,4 @@
+/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/tiny-07/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/tiny-07/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/tiny-07/cmake-build-debug/CMakeFiles/test.dir
+/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/tiny-07/cmake-build-debug/CMakeFiles/tests.dir

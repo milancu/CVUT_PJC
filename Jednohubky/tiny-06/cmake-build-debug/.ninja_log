@@ -1,0 +1,8 @@
+# ninja log v5
+1	3652	6586712979089577	CMakeFiles/tests.dir/tests-tiny-06.cpp.obj	f8b85571dfc8b1da
+1	876	6586710380560393	CMakeFiles/tests.dir/tiny-06.cpp.obj	a4217f49c1fe58d4
+190	4850	6586705638912340	CMakeFiles/tests.dir/tests-main.cpp.obj	503239fe8962d3bb
+3656	5525	6586712996712445	tests.exe	e3b20e50ed196a76
+1	4048	6586715345818448	CMakeFiles/tests.dir/tiny-06.cpp.obj	b7e71d58f116a534
+123	4874	6586715354228419	CMakeFiles/tests.dir/tests-tiny-06.cpp.obj	f384a71624e223b
+226	22007	6586715525272399	CMakeFiles/tests.dir/tests-main.cpp.obj	bc1a573b57198cdf

@@ -1,0 +1,7 @@
+# ninja log v5
+9	2969	6585874091346569	CMakeFiles/tests-stage-1.dir/trie.cpp.obj	f85e97406e603625
+1	3088	6585874092526555	CMakeFiles/tests-stage-1.dir/tests-trie-01.cpp.obj	b438b5617c60de70
+16	5832	6585874119904331	CMakeFiles/tests-stage-1.dir/tests-main.cpp.obj	9a9f00bbd86b64a5
+5833	7137	6585874132000305	tests-stage-1.exe	f9073f1056da4525
+1	1126	6585874841550149	CMakeFiles/tests-stage-1.dir/tests-trie-01.cpp.obj	b438b5617c60de70
+1127	1716	6585874846400149	tests-stage-1.exe	f9073f1056da4525

@@ -1,0 +1,1 @@
+CMakeLists.txt not found in D:\Vysoka_Skola\3.Semestr\PJC\Projekty\b211_bd6b36pjc\Labs\lab07 Select CMakeLists.txt
