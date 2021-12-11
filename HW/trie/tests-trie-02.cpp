@@ -25,7 +25,7 @@ TEST_CASE("Iterator", "[stage2]") {
         trie::const_iterator iter1, iter2;
         REQUIRE(iter1 == iter2);
     }
-    trie t({"abc", "bcd", "cde", "edf"});
+    trie t({ "abc", "bcd", "cde", "edf" });
     auto it = t.begin();
     auto et = t.end();
     SECTION("End iterator and default constructed iterator are equal") {
@@ -47,6 +47,7 @@ TEST_CASE("Iterator", "[stage2]") {
         REQUIRE(it != et);
         REQUIRE(*it == "edf");
         ++it;
+
         REQUIRE(it == et);
     }
     SECTION("Postfix increment") {
@@ -91,54 +92,86 @@ TEST_CASE("Iterator", "[stage2]") {
         }
     }
     SECTION("Empty string handling") {
-        trie yes({"", "a", "b", "aaa", "aab"});
+        trie yes({ "", "a", "b", "aaa", "aab" });
         auto it = yes.begin();
         REQUIRE(*it == "");
-        trie no({"a", "b", "aaa", "aab"});
+        trie no({ "a", "b", "aaa", "aab" });
         it = no.begin();
         REQUIRE(*it == "a");
     }
+}
 
-    SECTION("Custom") {
-        trie t1({"a", "aa", "ab", "ad", "cd", "c", "q"});
-        auto it = t1.begin();
-        auto et = t1.end();
-        t1.insert("xXxXx");
+TEST_CASE("Iterator_Custom_Test", "[stage2_custom]") {
 
-        SECTION("Prefix increment") {
-            REQUIRE(it != et);
-            REQUIRE(*it == "a");
-            ++it;
+    trie t({ "abc", "bca", "bca", "bcb", "cd", "cda", "cdb", "d" });
+    auto it = t.begin();
+    auto et = t.end();
 
-            REQUIRE(it != et);
-            REQUIRE(*it == "aa");
-            ++it;
+    SECTION("Prefix increment") {
+        REQUIRE(it != et);
+        REQUIRE(*it == "abc");
+        ++it;
+        REQUIRE(it != et);
+        REQUIRE(*it == "bca");
+        ++it;
 
-            REQUIRE(it != et);
-            REQUIRE(*it == "ab");
-            ++it;
+        REQUIRE(it != et);
+        REQUIRE(*it == "bcb");
+        ++it;
 
-            REQUIRE(it != et);
-            REQUIRE(*it == "ad");
-            ++it;
+        REQUIRE(it != et);
+        REQUIRE(*it == "cd");
+        ++it;
 
-            REQUIRE(it != et);
-            REQUIRE(*it == "c");
-            ++it;
+        REQUIRE(it != et);
+        REQUIRE(*it == "cda");
+        ++it;
 
-            REQUIRE(it != et);
-            REQUIRE(*it == "cd");
-            ++it;
+        REQUIRE(it != et);
+        REQUIRE(*it == "cdb");
+        ++it;
 
-            REQUIRE(it != et);
-            REQUIRE(*it == "q");
-            ++it;
+        REQUIRE(it != et);
+        REQUIRE(*it == "d");
+        ++it;
 
-            REQUIRE(it != et);
-            REQUIRE(*it == "xXxXx");
-            ++it;
+        REQUIRE(it == et);
+    }
+}
+TEST_CASE("Iterator_Custom_Test2", "[stage2_custom]") {
 
-            REQUIRE(it == et);
-        }
+    trie t({"a", "aa", "ab", "ad", "cd", "c", "q"});
+    auto it = t.begin();
+    auto et = t.end();
+
+    SECTION("Prefix increment") {
+        REQUIRE(it != et);
+        REQUIRE(*it == "a");
+        ++it;
+        REQUIRE(it != et);
+        REQUIRE(*it == "aa");
+        ++it;
+
+        REQUIRE(it != et);
+        REQUIRE(*it == "ab");
+        ++it;
+
+        REQUIRE(it != et);
+        REQUIRE(*it == "ad");
+        ++it;
+
+        REQUIRE(it != et);
+        REQUIRE(*it == "c");
+        ++it;
+
+        REQUIRE(it != et);
+        REQUIRE(*it == "cd");
+        ++it;
+
+        REQUIRE(it != et);
+        REQUIRE(*it == "q");
+        ++it;
+
+        REQUIRE(it == et);
     }
 }

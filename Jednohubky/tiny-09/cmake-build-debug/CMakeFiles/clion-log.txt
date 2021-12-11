@@ -1,0 +1,4 @@
+C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.123\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/phuon/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.123/bin/ninja/win/ninja.exe -G Ninja D:\Vysoka_Skola\3.Semestr\PJC\Projekty\b211_bd6b36pjc\Jednohubky\tiny-09
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/tiny-09/cmake-build-debug

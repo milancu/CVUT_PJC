@@ -1,0 +1,4 @@
+D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/tiny-09/cmake-build-custom/CMakeFiles/tests.dir
+D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/tiny-09/cmake-build-custom/CMakeFiles/RUN_TESTS.dir
+D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/tiny-09/cmake-build-custom/CMakeFiles/ALL_BUILD.dir
+D:/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/tiny-09/cmake-build-custom/CMakeFiles/ZERO_CHECK.dir

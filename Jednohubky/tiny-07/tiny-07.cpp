@@ -18,6 +18,18 @@ bool mersenne_twister_generator::random_bool() {
     return bool_dist(rng);
 }
 
+std::unique_ptr<mersenne_twister_generator> mersenne_twister_generator::clone() const {
+    return std::make_unique<mersenne_twister_generator>(*this);
+}
+
+std::unique_ptr<fixed_generator> fixed_generator::clone() const {
+    return std::make_unique<fixed_generator>(*this);
+}
+
+std::unique_ptr<minstd_generator> minstd_generator::clone() const {
+    return std::make_unique<minstd_generator>(*this);
+}
+
 minstd_generator::minstd_generator(size_t seed):
     rng(static_cast<uint32_t>(seed))
 {}
@@ -32,4 +44,8 @@ int minstd_generator::random_int(int lower, int upper) {
 
 bool minstd_generator::random_bool() {
     return bool_dist(rng);
+}
+
+std::unique_ptr<numbers_generator> numbers_generator::clone() const {
+    return std::unique_ptr<numbers_generator>(this->clone1());
 }

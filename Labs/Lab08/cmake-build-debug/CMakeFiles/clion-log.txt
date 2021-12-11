@@ -1,14 +1,14 @@
-C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.5\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/phuon/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.5/bin/ninja/win/ninja.exe -G Ninja D:\Vysoka_Skola\3.Semestr\PJC\Projekty\b211_bd6b36pjc\Labs\Lab08
--- The C compiler identification is MSVC 19.29.30137.0
--- The CXX compiler identification is MSVC 19.29.30137.0
+C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.123\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/phuon/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.123/bin/ninja/win/ninja.exe -G Ninja D:\Vysoka_Skola\3.Semestr\PJC\Projekty\b211_bd6b36pjc\Labs\Lab08
+-- The C compiler identification is GNU 11.2.0
+-- The CXX compiler identification is GNU 11.2.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
--- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/cl.exe - skipped
+-- Check for working C compiler: C:/Users/phuon/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.123/bin/mingw/bin/gcc.exe - skipped
 -- Detecting C compile features
 -- Detecting C compile features - done
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/cl.exe - skipped
+-- Check for working CXX compiler: C:/Users/phuon/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.123/bin/mingw/bin/g++.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Configuring done

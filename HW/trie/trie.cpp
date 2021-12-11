@@ -7,17 +7,9 @@
 
 using namespace std;
 
-trie_node *findBegin(const trie_node *node, int begin) {
-    for (int i = begin; i < num_chars; i++) {
-        if (node->children[i] != nullptr) {
-            node = node->children[i];
-            i = 0;
-            if (node->is_terminal) {
-                return const_cast<trie_node *>(node);
-            }
-        }
-    }
-    return const_cast<trie_node *>(node);
+
+std::vector<std::string> extract(const trie &t) {
+    return {t.begin(), t.end()};
 }
 
 bool containAnotherChildren(const trie_node *node, int begin) {
@@ -29,12 +21,33 @@ bool containAnotherChildren(const trie_node *node, int begin) {
     return false;
 }
 
+trie_node *findBegin(const trie_node *node, int begin) {
+    for (int i = begin; i < num_chars; i++) {
+        if (node->children[i] != nullptr) {
+            node = node->children[i];
+            i = 0;
+            if (node->is_terminal) {
+                return const_cast<trie_node *>(node);
+            }
+        }
+    }
+    if (!node->is_terminal) {
+        while (node->parent != nullptr) {
+            if (containAnotherChildren(node->parent, node->payload + 1)) {
+                return findBegin(node->parent, node->payload + 1);
+            } else {
+                node = node->parent;
+            }
+        }
+    }
+    return const_cast<trie_node *>(node);
+}
+
 trie_node *createNewNode(trie_node *parent, char &str) {
     trie_node *newNode = new trie_node();
     newNode->payload = str;
     newNode->parent = parent;
     parent->children[str] = newNode;
-//    cout << "Vytvorilo se: " << newNode->payload << endl;
     return newNode;
 }
 
@@ -70,6 +83,11 @@ trie::trie(trie &&rhs) {
             this->insert(value);
         }
     }
+}
+
+trie::~trie() {
+    deleteNode(m_root);
+    m_size = 0;
 }
 
 trie::trie(const vector<string> &strings) {
@@ -109,19 +127,49 @@ trie &trie::operator=(trie &&rhs) {
     return *this;
 }
 
-bool trie::erase(const std::string &str) {
-    trie_node *currNode = m_root;
-    for (int i = 0; i < str.size(); i++) {
-        char currentChar = str[i];
-        if (currNode->children[currentChar] == nullptr) {
+bool notContainAnother(trie_node *node) {
+    for (int i = 0; i < num_chars; i++) {
+        if (node->children[i] != nullptr) {
             return false;
-        } else {
-            currNode = currNode->children[currentChar];
         }
     }
-    if (currNode->is_terminal) {
-        currNode->is_terminal = false;
+    return true;
+}
+
+void deleteParentNodes(trie_node *node) {
+    if (node->parent == nullptr) {
+        return;
+    }
+    if (containAnotherChildren(node, 0)) {
+        return;
+    } else {
+        node->parent->children[node->payload] = nullptr;
+        deleteParentNodes(node->parent);
+        delete node;
+        return;
+    }
+}
+
+
+bool trie::erase(const std::string &str) {
+    trie_node *node = m_root;
+    for (int i = 0; i < str.size(); i++) {
+        if (node->children[str[i]]->payload == str[i]) {
+            node = node->children[str[i]];
+        } else {
+            return false;
+        }
+    }
+    if (node->is_terminal) {
+        node->is_terminal = false;
         m_size--;
+        if (notContainAnother(node) && !node->is_terminal) {
+            node->parent->children[node->payload] = nullptr;
+            deleteParentNodes(node->parent);
+            delete node;
+        } else {
+            return true;
+        }
         return true;
     } else {
         return false;
@@ -171,10 +219,7 @@ bool trie::empty() const {
     return m_size == 0;
 }
 
-trie::~trie() {
-    deleteNode(m_root);
-    m_size = 0;
-}
+
 
 //Druha stage
 
@@ -256,54 +301,110 @@ void trie::swap(trie &rhs) {
 }
 
 bool trie::operator==(const trie &rhs) const {
-    auto rit = rhs.begin();
-    auto lit = this->begin();
-    while (rit != rhs.end() && lit != this->end()) {
-        if (*rit != *lit) return false;
-        rit++;
-        lit++;
-    }
-    return rit == rhs.end() && lit == this->end();
+    return extract(*this) == extract(rhs);
 }
 
-bool operator!=(const trie &lhs, const trie &rhs){
-    auto rit = rhs.begin();
-    auto lit = lhs.begin();
-    while (rit != rhs.end() && lit != lhs.end()) {
-        if (*rit != *lit) return false;
-        rit++;
-        lit++;
-    }
-    return rit == rhs.end() && lit == lhs.end();
+bool operator!=(const trie &lhs, const trie &rhs) {
+    return extract(lhs) != extract(rhs);
+}
+
+std::ostream &operator<<(ostream &out, const trie &trie) {
+    return out;
+}
+
+
+//! Lexicografické uspořádání, viz operator<
+bool operator<=(const trie &lhs, const trie &rhs) {
+    return extract(lhs) <= extract(rhs);
 }
 
 //! Lexicografické uspořádání, viz operator<
-bool operator<=(const trie &lhs, const trie &rhs){
-    return false;
+bool operator>(const trie &lhs, const trie &rhs) {
+    return extract(lhs) > extract(rhs);
 }
 
 //! Lexicografické uspořádání, viz operator<
-bool operator>(const trie &lhs, const trie &rhs){
-    return false;
-}
-
-//! Lexicografické uspořádání, viz operator<
-bool operator>=(const trie &lhs, const trie &rhs){
-    return false;
+bool operator>=(const trie &lhs, const trie &rhs) {
+    return extract(lhs) >= extract(rhs);
 }
 
 bool trie::operator<(const trie &rhs) const {
-    return false;
+    return extract(*this) < extract(rhs);
+}
+
+//Stage 4
+
+std::vector<std::string> trie::search_by_prefix(const string &prefix) const {
+    std::vector<std::string> allString = extract(*this);
+    std::vector<std::string> result;
+    for (auto value: allString) {
+        if (value.size() < prefix.size()) {
+            continue;
+        } else if (value.substr(0, prefix.size()) == prefix) {
+            result.push_back(value);
+        }
+    }
+    return result;
+}
+
+std::vector<std::string> trie::get_prefixes(const string &str) const {
+    std::vector<std::string> allString = extract(*this);
+    std::vector<std::string> result;
+    for (auto value: allString) {
+        if (!str.find(value)) {
+            result.push_back(value);
+        }
+    }
+    return result;
 }
 
 trie trie::operator&(const trie &rhs) const {
-    return trie();
+    trie trieResult;
+    if (this->empty() || rhs.empty()) {
+        return trie();
+    }
+    if(extract(*this).size() < extract(rhs).size()){
+        for(auto elem : extract(*this)){
+            if(rhs.contains(elem)){
+                trieResult.insert(elem);
+            }
+        }
+    } else {
+        for(auto elem : extract(rhs)){
+            if(this->contains(elem)){
+                trieResult.insert(elem);
+            }
+        }
+    }
+    return trieResult;
 }
+
+
 
 trie trie::operator|(const trie &rhs) const {
-    return trie();
+    std::vector<std::string> thisString = extract(*this);
+    std::vector<std::string> rhsString = extract(rhs);
+    std::vector<std::string> allString = extract(rhs);
+
+    allString.insert(allString.end(), thisString.begin(), thisString.end());
+    allString.insert(allString.end(), rhsString.begin(), rhsString.end());
+    if (thisString.size() == 1 && rhsString.size() == 1) {
+        return trie();
+    }
+
+    if (thisString.size() == 1) {
+        return trie(rhsString);
+    }
+
+    if (rhsString.size() == 1) {
+        return trie(thisString);
+    }
+
+
+    sort(allString.begin(), allString.end());
+    vector<std::string>::iterator it;
+    it = std::unique(allString.begin(), allString.end());
+    allString.resize(distance(allString.begin(), it));
+
+    return trie(allString);
 }
-
-
-
-

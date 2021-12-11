@@ -22,23 +22,23 @@
 TEST_CASE("Copy", "[stage3]") {
     SECTION("Copy constructor") {
         SECTION("Verify that deep copy is performed") {
-            trie t1({"a", "aa", "ab", "ad", "cd", "c", "q"});
+            trie t1({ "a", "aa", "ab", "ad", "cd", "c", "q" });
             trie t2(t1);
             SECTION("Add to old trie") {
                 t1.insert("xXxXx");
-                VALIDATE_SETS(extract_all(t1), as_vec({"a", "aa", "ab", "ad", "cd", "c", "q", "xXxXx"}));
-                VALIDATE_SETS(extract_all(t2), as_vec({"a", "aa", "ab", "ad", "cd", "c", "q"}));
+                VALIDATE_SETS(extract_all(t1), as_vec({ "a", "aa", "ab", "ad", "cd", "c", "q", "xXxXx" }));
+                VALIDATE_SETS(extract_all(t2), as_vec({ "a", "aa", "ab", "ad", "cd", "c", "q" }));
             }
             SECTION("Add to new trie") {
                 t2.insert("xXxXx");
-                VALIDATE_SETS(extract_all(t1), as_vec({"a", "aa", "ab", "ad", "cd", "c", "q"}));
-                VALIDATE_SETS(extract_all(t2), as_vec({"a", "aa", "ab", "ad", "cd", "c", "q", "xXxXx"}));
+                VALIDATE_SETS(extract_all(t1), as_vec({ "a", "aa", "ab", "ad", "cd", "c", "q" }));
+                VALIDATE_SETS(extract_all(t2), as_vec({ "a", "aa", "ab", "ad", "cd", "c", "q", "xXxXx" }));
             }
             SECTION("Add to both tries") {
                 t1.insert("xXxXx");
                 t2.insert("YYY");
-                VALIDATE_SETS(extract_all(t1), as_vec({"a", "aa", "ab", "ad", "cd", "c", "q", "xXxXx"}));
-                VALIDATE_SETS(extract_all(t2), as_vec({"a", "aa", "ab", "ad", "cd", "c", "q", "YYY"}));
+                VALIDATE_SETS(extract_all(t1), as_vec({ "a", "aa", "ab", "ad", "cd", "c", "q", "xXxXx" }));
+                VALIDATE_SETS(extract_all(t2), as_vec({ "a", "aa", "ab", "ad", "cd", "c", "q", "YYY" }));
             }
         }
         SECTION("Copying an empty trie must work properly") {
@@ -180,63 +180,63 @@ TEST_CASE("Operator==, !=", "[stage3]") {
         REQUIRE(t1 == t2);
         REQUIRE_FALSE(t1 != t2);
     }
-//    SECTION("Empty and non empty tries aren't equal") {
-//        t1.insert("a");
-//        REQUIRE(t1 != t2);
-//        REQUIRE_FALSE(t1 == t2);
-//    }
-//    SECTION("Two tries with the same members") {
-//        insert_all(t1, {"aa", "bc", "efg", "xkcd"});
-//        insert_all(t2, {"efg", "xkcd", "aa", "bc"});
-//        REQUIRE(t1 == t2);
-//        REQUIRE_FALSE(t1 != t2);
-//    }
-//    SECTION("Two lists with different members") {
-//        trie t1({ "aa", "bc", "efg", "efgh"});
-//        trie t2({ "aa", "bcd", "efg"});
-//        REQUIRE(t1 != t2);
-//        REQUIRE_FALSE(t1 == t2);
-//    }
+    SECTION("Empty and non empty tries aren't equal") {
+        t1.insert("a");
+        REQUIRE(t1 != t2);
+        REQUIRE_FALSE(t1 == t2);
+    }
+    SECTION("Two tries with the same members") {
+        insert_all(t1, {"aa", "bc", "efg", "xkcd"});
+        insert_all(t2, {"efg", "xkcd", "aa", "bc"});
+        REQUIRE(t1 == t2);
+        REQUIRE_FALSE(t1 != t2);
+    }
+    SECTION("Two lists with different members") {
+        trie t1({ "aa", "bc", "efg", "efgh"});
+        trie t2({ "aa", "bcd", "efg"});
+        REQUIRE(t1 != t2);
+        REQUIRE_FALSE(t1 == t2);
+    }
 }
-//
-//TEST_CASE("Operators <, <=, >, >=", "[stage3]") {
-//    SECTION("Empty tries are neither lesser nor greater") {
-//        trie t1, t2;
-//        REQUIRE_FALSE(t1 < t2);
-//        REQUIRE_FALSE(t1 > t2);
-//        REQUIRE(t1 <= t2);
-//        REQUIRE(t1 >= t2);
-//    }
-//    SECTION("An empty trie is smaller than any non-empty trie") {
-//        trie t1;
-//        trie t2({ "a", "b", "abc" });
-//        REQUIRE(t1 <  t2);
-//        REQUIRE(t1 <= t2);
-//        REQUIRE_FALSE(t1 >  t2);
-//        REQUIRE_FALSE(t1 >= t2);
-//    }
-//    SECTION("Equal tries are neither lesser nor greater") {
-//        trie t1({"aa", "bc", "efg", "xkcd"});
-//        trie t2({"efg", "xkcd", "aa", "bc"});
-//        REQUIRE_FALSE(t1 < t2);
-//        REQUIRE(t1 <= t2);
-//        REQUIRE_FALSE(t1 > t2);
-//        REQUIRE(t1 >= t2);
-//    }
-//    SECTION("Trie's prefix compares as smaller") {
-//        trie t1({"aa", "bc", "efg"});
-//        trie t2({"aa", "bc", "efg", "efgh"});
-//        REQUIRE(t1 <  t2);
-//        REQUIRE(t1 <= t2);
-//        REQUIRE_FALSE(t1 >  t2);
-//        REQUIRE_FALSE(t1 >= t2);
-//    }
-//    SECTION("Distinct tries") {
-//        trie t1({ "aa", "bc", "efg", "efgh"});
-//        trie t2({ "aa", "bcd", "efg"});
-//        REQUIRE(t1 <  t2);
-//        REQUIRE(t1 <= t2);
-//        REQUIRE_FALSE(t1 >  t2);
-//        REQUIRE_FALSE(t1 >= t2);
-//    }
-//}
+
+TEST_CASE("Operators <, <=, >, >=", "[stage3]") {
+    SECTION("Empty tries are neither lesser nor greater") {
+        trie t1, t2;
+        REQUIRE_FALSE(t1 < t2);
+        REQUIRE_FALSE(t1 > t2);
+        REQUIRE(t1 <= t2);
+        REQUIRE(t1 >= t2);
+    }
+    SECTION("An empty trie is smaller than any non-empty trie") {
+        trie t1;
+        trie t2({ "a", "b", "abc" });
+        REQUIRE(t1 <  t2);
+        REQUIRE(t1 <= t2);
+        REQUIRE_FALSE(t1 >  t2);
+        REQUIRE_FALSE(t1 >= t2);
+    }
+    SECTION("Equal tries are neither lesser nor greater") {
+        trie t1({"aa", "bc", "efg", "xkcd"});
+        trie t2({"efg", "xkcd", "aa", "bc"});
+        REQUIRE_FALSE(t1 < t2);
+        REQUIRE(t1 <= t2);
+        REQUIRE_FALSE(t1 > t2);
+        REQUIRE(t1 >= t2);
+    }
+    SECTION("Trie's prefix compares as smaller") {
+        trie t1({"aa", "bc", "efg"});
+        trie t2({"aa", "bc", "efg", "efgh"});
+        REQUIRE(t1 <  t2);
+        REQUIRE(t1 <= t2);
+        REQUIRE_FALSE(t1 >  t2);
+        REQUIRE_FALSE(t1 >= t2);
+    }
+    SECTION("Distinct tries") {
+        trie t1({ "aa", "bc", "efg", "efgh"});
+        trie t2({ "aa", "bcd", "efg"});
+        REQUIRE(t1 <  t2);
+        REQUIRE(t1 <= t2);
+        REQUIRE_FALSE(t1 >  t2);
+        REQUIRE_FALSE(t1 >= t2);
+    }
+}

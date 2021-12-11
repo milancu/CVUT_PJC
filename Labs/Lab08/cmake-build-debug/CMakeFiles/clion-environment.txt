@@ -1,4 +1,4 @@
-ToolSet: 16.0 (local)@C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools
+ToolSet: w64 9.0 (local)@C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.123\bin\mingw
 Options: 
 
-Options:-DCMAKE_MAKE_PROGRAM=C:/Users/phuon/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.5/bin/ninja/win/ninja.exe
+Options:-DCMAKE_MAKE_PROGRAM=C:/Users/phuon/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.123/bin/ninja/win/ninja.exe

@@ -5,3 +5,11 @@
 5833	7137	6585874132000305	tests-stage-1.exe	f9073f1056da4525
 1	1126	6585874841550149	CMakeFiles/tests-stage-1.dir/tests-trie-01.cpp.obj	b438b5617c60de70
 1127	1716	6585874846400149	tests-stage-1.exe	f9073f1056da4525
+59	1708	6600594244416996	CMakeFiles/tests-stage-1.dir/trie.cpp.obj	f85e97406e603625
+2	1729	6600594244946948	CMakeFiles/tests-stage-1.dir/tests-trie-01.cpp.obj	b438b5617c60de70
+1730	2575	6600594252116954	tests-stage-1.exe	f9073f1056da4525
+7	1220	6600594598128186	CMakeFiles/tests-stage-4.dir/trie.cpp.obj	f79e775d6ff6a0a9
+1	1558	6600594601448187	CMakeFiles/tests-stage-4.dir/tests-trie-04.cpp.obj	11ad0f81364cf2e7
+15	2622	6600594612168148	CMakeFiles/tests-stage-4.dir/test-helpers.cpp.obj	86d7f37f23b156c7
+11	5546	6600594641368163	CMakeFiles/tests-stage-4.dir/tests-main.cpp.obj	f8d1040b84016f5c
+5546	6714	6600594652388180	tests-stage-4.exe	d4ac52cfb5739fcd

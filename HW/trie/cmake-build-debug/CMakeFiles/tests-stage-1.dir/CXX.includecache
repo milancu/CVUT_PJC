@@ -15,7 +15,9 @@ algorithm
 -
 cassert
 -
-iostream
+stack
+-
+vector
 -
 
 /mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/HW/trie/trie.hpp

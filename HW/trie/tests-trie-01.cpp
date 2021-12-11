@@ -1,5 +1,6 @@
 #include "trie.hpp"
 #include "catch.hpp"
+
 /*
    Testy pro stage-01.
 
@@ -16,8 +17,8 @@
 
 
 namespace {
-    void insert_all(trie &t, const std::vector<std::string> &strings) {
-        for (const auto &string: strings) {
+    void insert_all(trie& t, const std::vector<std::string>& strings) {
+        for (const auto& string : strings) {
             t.insert(string);
         }
     }
@@ -67,7 +68,7 @@ TEST_CASE("Basics: erase", "[stage1]") {
     }
 
     SECTION("Erase in the middle of a link") {
-        insert_all(trie, {"", "a", "ab", "abc", "abcd"});
+        insert_all(trie, { "", "a", "ab", "abc", "abcd" });
         REQUIRE(trie.erase("ab"));
         REQUIRE(trie.size() == 4);
         REQUIRE_FALSE(trie.contains("ab"));
@@ -99,7 +100,7 @@ TEST_CASE("Complex: repeated interaction", "[stage1]") {
     trie trie;
 
     SECTION("Reinserting and reerasing the same element works properly") {
-        insert_all(trie, {"a", "aa", "ab", "ac"});
+        insert_all(trie, { "a", "aa", "ab", "ac" });
         REQUIRE(trie.erase("a"));
         REQUIRE_FALSE(trie.contains("a"));
         REQUIRE(trie.insert("a"));
@@ -115,7 +116,7 @@ TEST_CASE("Complex: repeated interaction", "[stage1]") {
 }
 
 TEST_CASE("Vector constructor", "[stage1]") {
-    trie trie({"abc", "bc", "a", "bc", "d", "", "d", "abcd", "abc"});
+    trie trie({ "abc", "bc", "a", "bc", "d", "", "d", "abcd", "abc" });
     REQUIRE(trie.size() == 6);
     REQUIRE(trie.contains(""));
     REQUIRE(trie.contains("a"));
@@ -125,21 +126,4 @@ TEST_CASE("Vector constructor", "[stage1]") {
     REQUIRE_FALSE(trie.contains("ab"));
     REQUIRE(trie.contains("abc"));
     REQUIRE(trie.contains("abcd"));
-}
-
-TEST_CASE("Custom test", "[stage1]") {
-    trie trie({ "A", "B", "C", "D"});
-    REQUIRE(trie.size() == 4);
-}
-
-
-TEST_CASE("Custom test erase", "[stage1]") {
-    trie t2({ "qwertz", "qwerty", "azerty" });
-    REQUIRE(t2.erase("azerty"));
-    REQUIRE_FALSE(t2.contains("a"));
-    REQUIRE_FALSE(t2.contains("az"));
-    REQUIRE_FALSE(t2.contains("aze"));
-    REQUIRE_FALSE(t2.contains("azer"));
-    REQUIRE_FALSE(t2.contains("azert"));
-    REQUIRE_FALSE(t2.contains("azerty"));
 }
