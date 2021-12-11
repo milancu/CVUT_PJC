@@ -61,7 +61,6 @@ Commands::Command parse_command(string const &str) {
         return Commands::Evaluate {std::move(variables)};
     } else if (cmd == "print") {
         check_nargs("print", 0);
-        // TODO: bonus print
         return Commands::Print {};
     } else if (cmd == "simplify") {
         check_nargs("simplify", 0);
