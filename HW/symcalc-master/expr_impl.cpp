@@ -28,16 +28,17 @@ namespace exprs {
     }
 
     bool number::equals(const expr_base &b) const {
-        auto expr = dynamic_cast<number const *>(b.shared_from_this().get());
-        return (expr->num. == this->num);
+        if(const number* v = dynamic_cast<number const*>(b.shared_from_this().get())) {
+            return v->num == num;
+        }
+        return false;
     }
     //</editor-fold>
 
 
     //<editor-fold desc="variable">
     //Variable
-    variable::variable(std::string name) {
-    }
+    variable::variable(std::string var) : var(std::move(var)) {}
 
     void variable::write(std::ostream &out, expr_base::WriteFormat fmt) const {
         out << var;
@@ -62,9 +63,10 @@ namespace exprs {
     }
 
     bool variable::equals(const expr_base &b) const {
-        if (const variable *value = dynamic_cast<variable const *>(b.shared_from_this().get())) {
-            return value->var == var;
+        if(const variable* v = dynamic_cast<variable const*>(b.shared_from_this().get())) {
+            return v->var == var;
         }
+        return false;
     }
     //</editor-fold>
 
@@ -94,8 +96,8 @@ namespace exprs {
     }
 
     expr operator_plus::simplify() const {
-        expr op1 = operand1->simplify();
-        expr op2 = operand2->simplify();
+        auto op1 = operand1->simplify();
+        auto op2 = operand2->simplify();
         if (op1 == expr::ZERO) {
             return op2->shared_from_this();
         } else if (op2 == expr::ZERO) {
@@ -106,8 +108,10 @@ namespace exprs {
     }
 
     bool operator_plus::equals(const expr_base &b) const {
-        auto expr = dynamic_cast<operator_plus const *>(b.shared_from_this().get());
-        return (expr->operand1 == this->operand1 && expr->operand2 == this->operand2);
+        if(const operator_plus* value = dynamic_cast<operator_plus const*>(b.shared_from_this().get())) {
+            return value->operand1 == operand1 && value->operand2 == operand2;
+        }
+        return false;
     }
     //</editor-fold>
 
@@ -140,15 +144,20 @@ namespace exprs {
         expr op1 = operand1->simplify();
         expr op2 = operand2->simplify();
         if (op1 == expr::ZERO) {
-            return op2;
+            return op2->shared_from_this();
+        } else if (op2 == expr::ZERO) {
+            return op1->shared_from_this();
+        } else {
+            return std::make_shared<exprs::operator_minus>(op1, op2);
         }
-        return std::make_shared<exprs::operator_minus>(operator_minus(op1, op2));
     }
 
 
     bool operator_minus::equals(const expr_base &b) const {
-        auto expr = dynamic_cast<operator_minus const *>(b.shared_from_this().get());
-        return (expr->operand1 == this->operand1 && expr->operand2 == this->operand2);
+        if(const operator_minus* value = dynamic_cast<operator_minus const*>(b.shared_from_this().get())) {
+            return value->operand1 == operand1 && value->operand2 == operand2;
+        }
+        return false;
     }
     //</editor-fold>
 
@@ -186,7 +195,7 @@ namespace exprs {
             return expr::ZERO;
         } else if (op2 == expr::ONE) {
             return op1->shared_from_this();
-        } else if (op2 == expr::ONE) {
+        } else if (op1 == expr::ONE) {
             return op2->shared_from_this();
         } else {
             return std::make_shared<operator_multiply>(op1, op2);
@@ -194,8 +203,10 @@ namespace exprs {
     }
 
     bool operator_multiply::equals(const expr_base &b) const {
-        auto expr = dynamic_cast<operator_multiply const *>(b.shared_from_this().get());
-        return (expr->operand1 == this->operand1 && expr->operand2 == this->operand2);
+        if(const operator_multiply* value = dynamic_cast<operator_multiply const*>(b.shared_from_this().get())) {
+            return value->operand1 == operand1 && value->operand2 == operand2;
+        }
+        return false;
     }
     //</editor-fold>
 
@@ -243,8 +254,10 @@ namespace exprs {
     }
 
     bool operator_divide::equals(const expr_base &b) const {
-        auto expr = dynamic_cast<operator_divide const *>(b.shared_from_this().get());
-        return (expr->operand1 == this->operand1 && expr->operand2 == this->operand2);
+        if(const operator_divide* value = dynamic_cast<operator_divide const*>(b.shared_from_this().get())) {
+            return value->operand1 == operand1 && value->operand2 == operand2;
+        }
+        return false;
     }
     //</editor-fold>
 
@@ -272,7 +285,7 @@ namespace exprs {
     expr operator_pow::derive(const std::string &variable) const {
         expr fdg = std::make_shared<operator_pow>(operator_pow(operand1, operand2));
         expr fdMg = std::make_shared<operator_multiply>(operator_multiply(operand1->derive(variable), operand2));
-        expr fdMgDg = std::make_shared<operator_divide>(operator_divide(fdMg, operand2));
+        expr fdMgDg = std::make_shared<operator_divide>(operator_divide(fdMg, operand1));
         expr fMgd = std::make_shared<operator_multiply>(operator_multiply(log(operand1), operand2->derive(variable)));
         auto fdMgDgPfMgd = std::make_shared<operator_plus>(operator_plus(fdMgDg, fMgd));
         return std::make_shared<operator_multiply>(operator_multiply(fdg, fdMgDgPfMgd));
@@ -330,8 +343,10 @@ namespace exprs {
     }
 
     bool operator_sinus::equals(const expr_base &b) const {
-        auto expr = dynamic_cast<operator_sinus const *>(b.shared_from_this().get());
-        return (expr->operand1 == this->operand1);
+        if(const operator_sinus* value = dynamic_cast<operator_sinus const*>(b.shared_from_this().get())) {
+            return value->operand1 == operand1;
+        }
+        return false;
     }
     //</editor-fold>
 
@@ -368,8 +383,10 @@ namespace exprs {
     }
 
     bool operator_cosinus::equals(const expr_base &b) const {
-        auto expr = dynamic_cast<operator_cosinus const *>(b.shared_from_this().get());
-        return (expr->operand1 == this->operand1);
+        if(const operator_cosinus* value = dynamic_cast<operator_cosinus const*>(b.shared_from_this().get())) {
+            return value->operand1 == operand1;
+        }
+        return false;
     }
     //</editor-fold>
 
@@ -409,8 +426,10 @@ namespace exprs {
     }
 
     bool operator_log::equals(const expr_base &b) const {
-        auto expr = dynamic_cast<operator_log const *>(b.shared_from_this().get());
-        return (expr->operand1 == this->operand1);
+        if(const operator_log* value = dynamic_cast<operator_log const*>(b.shared_from_this().get())) {
+            return value->operand1 == operand1;
+        }
+        return false;
     }
     //</editor-fold>
 }

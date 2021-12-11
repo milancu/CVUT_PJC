@@ -19,7 +19,7 @@ expr expr::number(double n) {
 }
 
 expr expr::variable(std::string name) {
-    return std::make_shared<exprs::variable>(exprs::variable(std::move(name)));
+    return std::make_shared<exprs::variable>(exprs::variable(name));
 }
 
 expr create_expression_tree(const std::string &expression) {
@@ -27,7 +27,7 @@ expr create_expression_tree(const std::string &expression) {
     std::stack<Token> stackOfExpr = std::stack<Token>();
     std::istringstream is(expression);
     Tokenizer tokenizer = Tokenizer(is);
-    TokenId prevToken;
+//    TokenId prevToken;
 
     while (true) {
         Token tokenHelper = tokenizer.next();
@@ -290,7 +290,7 @@ expr create_expression_tree(const std::string &expression) {
 
 
         }
-        prevToken = tokenHelper.id;
+//        prevToken = tokenHelper.id;
         if (tokenHelper.id == TokenId::End) break;
     }
     return output.front();
@@ -311,7 +311,7 @@ std::ostream &operator<<(std::ostream &os, const fmt_expr &e) {
 }
 
 expr operator+(expr a, expr b) {
-    return std::make_shared<exprs::operator_plus>(exprs::operator_plus(a, b));
+    return std::make_shared<exprs::operator_plus>(exprs::operator_plus(std::move(a), std::move(b)));
 }
 
 expr operator-(expr a, expr b) {
