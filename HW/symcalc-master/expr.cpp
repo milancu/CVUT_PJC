@@ -19,73 +19,88 @@ expr expr::number(double n) {
 }
 
 expr expr::variable(std::string name) {
-    return std::make_shared<exprs::variable>(exprs::variable(name));
+    return std::make_shared<exprs::variable>(exprs::variable(std::move(name)));
 }
 
 expr create_expression_tree(const std::string &expression) {
-    std::deque<expr> output = std::deque<expr>();
-    std::stack<Token> stackOfExpr = std::stack<Token>();
+    auto output = std::deque<expr>();
+    auto stackOfExpr = std::stack<Token>();
     std::istringstream is(expression);
     Tokenizer tokenizer = Tokenizer(is);
-//    TokenId prevToken;
+    expr x, y;
+    bool need_oper = false;
+    TokenId prevToken = TokenId::End;
 
     while (true) {
         Token tokenHelper = tokenizer.next();
         switch (tokenHelper.id) {
             case TokenId::End:
+                if (output.empty()) {
+                    throw parse_error("missing numbers");
+                }
                 while (!stackOfExpr.empty() && stackOfExpr.top().id != TokenId::LParen) {
-//                    output.push_back(expr::variable(stackOfExpr.top().identifier));
+                    if (stackOfExpr.top().id == TokenId::LParen || stackOfExpr.top().id == TokenId::RParen)
+                        throw parse_error("parenthesis don't match");
                     if (stackOfExpr.top().id == TokenId::Plus) {
-                        expr x = output.back();
+                        if (output.size() < 2) throw parse_error("not enough numbers");
+                        if (output.empty()) break;
+                        x = output.back();
                         output.pop_back();
-                        expr y = output.back();
+                        if (output.empty()) break;
+                        y = output.back();
                         output.pop_back();
                         output.push_back(y + x);
                         stackOfExpr.pop();
                         if (stackOfExpr.empty()) break;
-                    }
-                    if (stackOfExpr.top().id == TokenId::Minus) {
-                        expr x = output.back();
+                    } else if (stackOfExpr.top().id == TokenId::Minus) {
+                        if (output.size() < 2) throw parse_error("not enough numbers");
+                        x = output.back();
                         output.pop_back();
-                        expr y = output.back();
+                        y = output.back();
                         output.pop_back();
                         output.push_back(y - x);
                         stackOfExpr.pop();
                         if (stackOfExpr.empty()) break;
-                    }
-                    if (stackOfExpr.top().id == TokenId::Multiply) {
-                        expr x = output.back();
+                    } else if (stackOfExpr.top().id == TokenId::Multiply) {
+                        if (output.size() < 2) throw parse_error("not enough numbers");
+                        x = output.back();
                         output.pop_back();
-                        expr y = output.back();
+                        y = output.back();
                         output.pop_back();
                         output.push_back(y * x);
                         stackOfExpr.pop();
                         if (stackOfExpr.empty()) break;
-                    }
-                    if (stackOfExpr.top().id == TokenId::Divide) {
-                        expr x = output.back();
+                    } else if (stackOfExpr.top().id == TokenId::Divide) {
+                        if (output.size() < 2) throw parse_error("not enough numbers");
+                        x = output.back();
                         output.pop_back();
-                        expr y = output.back();
+                        y = output.back();
                         output.pop_back();
                         output.push_back(y / x);
                         stackOfExpr.pop();
                         if (stackOfExpr.empty()) break;
-                    }
-                    if (stackOfExpr.top().id == TokenId::Power) {
-                        expr x = output.back();
+                    } else if (stackOfExpr.top().id == TokenId::Power) {
+                        if (output.size() < 2) throw parse_error("not enough numbers");
+                        x = output.back();
                         output.pop_back();
-                        expr y = output.back();
+                        y = output.back();
                         output.pop_back();
                         output.push_back(pow(y, x));
                         stackOfExpr.pop();
                         if (stackOfExpr.empty()) break;
+                    } else {
+                        throw tokenize_error("attempt to apply unknown thing");
                     }
                 }
                 break;
             case TokenId::Number:
+                if (need_oper) throw parse_error("missing operation");
+                need_oper = true;
                 output.push_back(expr::number(tokenHelper.number));
                 break;
             case TokenId::Identifier:
+                if (need_oper) throw parse_error("missing operation");
+                need_oper = true;
                 if (tokenHelper.identifier == "sin"
                     ||
                     tokenHelper.identifier == "cos"
@@ -97,203 +112,190 @@ expr create_expression_tree(const std::string &expression) {
                 output.push_back(expr::variable(tokenHelper.identifier));
                 break;
             case TokenId::LParen:
+                need_oper = false;
                 stackOfExpr.push(tokenHelper);
                 break;
-            case TokenId::RParen:
+            case TokenId::RParen: {
+                if (output.empty()) throw parse_error("missing numbers");
+                if (prevToken == TokenId::LParen) throw parse_error("missing left parenthesis");
+                need_oper = true;
+                if (stackOfExpr.empty()) break;
                 while (stackOfExpr.top().id != TokenId::LParen) {
-                    if (!stackOfExpr.empty()) {
+                    if (stackOfExpr.empty()) break;
+                    if (stackOfExpr.top().identifier == "sin"
+                        ||
+                        stackOfExpr.top().identifier == "cos"
+                        ||
+                        stackOfExpr.top().identifier == "log") {
+                        if (output.empty()) throw parse_error("not enough numbers to apply function");
+                        x = output.back();
+                        output.pop_back();
+                        if (stackOfExpr.top().identifier == "sin") output.push_back(sin(x));
+                        if (stackOfExpr.top().identifier == "cos") output.push_back(cos(x));
+                        if (stackOfExpr.top().identifier == "log") output.push_back(log(x));
+                        stackOfExpr.pop();
+                    }
+                    if (stackOfExpr.empty()) break;
+                    if (stackOfExpr.top().id == TokenId::Plus) {
+                        if (output.size() < 2) throw parse_error("not enough numbers");
+                        x = output.back();
+                        output.pop_back();
+                        y = output.back();
+                        output.pop_back();
+                        output.push_back(y + x);
+                        stackOfExpr.pop();
                         if (stackOfExpr.empty()) break;
-                        if (stackOfExpr.top().id == TokenId::Plus) {
-                            expr x = output.back();
-                            output.pop_back();
-                            expr y = output.back();
-                            output.pop_back();
-                            output.push_back(y + x);
-                            stackOfExpr.pop();
-                            if (stackOfExpr.empty()) break;
-                        }
-                        if (stackOfExpr.top().id == TokenId::Minus) {
-                            expr x = output.back();
-                            output.pop_back();
-                            expr y = output.back();
-                            output.pop_back();
-                            output.push_back(y - x);
-                            stackOfExpr.pop();
-                            if (stackOfExpr.empty()) break;
-                        }
-                        if (stackOfExpr.top().id == TokenId::Multiply) {
-                            expr x = output.back();
-                            output.pop_back();
-                            expr y = output.back();
-                            output.pop_back();
-                            output.push_back(y * x);
-                            stackOfExpr.pop();
-                            if (stackOfExpr.empty()) break;
-                        }
-                        if (stackOfExpr.top().id == TokenId::Divide) {
-                            expr x = output.back();
-                            output.pop_back();
-                            expr y = output.back();
-                            output.pop_back();
-                            output.push_back(y / x);
-                            stackOfExpr.pop();
-                            if (stackOfExpr.empty()) break;
-                        }
-                        if (stackOfExpr.top().id == TokenId::Power) {
-                            expr x = output.back();
-                            output.pop_back();
-                            expr y = output.back();
-                            output.pop_back();
-                            output.push_back(pow(y, x));
-                            stackOfExpr.pop();
-                            if (stackOfExpr.empty()) break;
-                        }
+                    }
+                    if (stackOfExpr.top().id == TokenId::Minus) {
+                        if (output.size() < 2) throw parse_error("not enough numbers");
+                        x = output.back();
+                        output.pop_back();
+                        y = output.back();
+                        output.pop_back();
+                        output.push_back(y - x);
+                        stackOfExpr.pop();
+                        if (stackOfExpr.empty()) break;
+                    }
+                    if (stackOfExpr.top().id == TokenId::Multiply) {
+                        if (output.size() < 2) throw parse_error("not enough numbers");
+                        x = output.back();
+                        output.pop_back();
+                        y = output.back();
+                        output.pop_back();
+                        output.push_back(y * x);
+                        stackOfExpr.pop();
+                        if (stackOfExpr.empty()) break;
+                    }
+                    if (stackOfExpr.top().id == TokenId::Divide) {
+                        if (output.size() < 2) throw parse_error("not enough numbers");
+                        x = output.back();
+                        output.pop_back();
+                        y = output.back();
+                        output.pop_back();
+                        output.push_back(y / x);
+                        stackOfExpr.pop();
+                        if (stackOfExpr.empty()) break;
+                    }
+                    if (stackOfExpr.top().id == TokenId::Power) {
+                        if (output.size() < 2) throw parse_error("not enough numbers");
+                        x = output.back();
+                        output.pop_back();
+                        y = output.back();
+                        output.pop_back();
+                        output.push_back(pow(y, x));
+                        stackOfExpr.pop();
+                        if (stackOfExpr.empty()) break;
                     }
                 }
                 if (stackOfExpr.empty()) break;
-
-                if (stackOfExpr.top().id == TokenId::LParen) {
-                    stackOfExpr.pop();
-                }
+                stackOfExpr.pop();
                 if (stackOfExpr.empty()) break;
                 if (stackOfExpr.top().identifier == "sin"
                     ||
                     stackOfExpr.top().identifier == "cos"
                     ||
                     stackOfExpr.top().identifier == "log") {
-                    expr x = output.back();
+                    if (output.empty()) throw parse_error("not enough numbers to apply function");
+                    x = output.back();
                     output.pop_back();
                     if (stackOfExpr.top().identifier == "sin") output.push_back(sin(x));
                     if (stackOfExpr.top().identifier == "cos") output.push_back(cos(x));
                     if (stackOfExpr.top().identifier == "log") output.push_back(log(x));
                     stackOfExpr.pop();
                 }
-                if (stackOfExpr.empty()) break;
-                if (stackOfExpr.top().id == TokenId::Plus) {
-                    expr x = output.back();
-                    output.pop_back();
-                    expr y = output.back();
-                    output.pop_back();
-                    output.push_back(y + x);
-                    stackOfExpr.pop();
-                    if (stackOfExpr.empty()) break;
-                }
-                if (stackOfExpr.top().id == TokenId::Minus) {
-                    expr x = output.back();
-                    output.pop_back();
-                    expr y = output.back();
-                    output.pop_back();
-                    output.push_back(y - x);
-                    stackOfExpr.pop();
-                    if (stackOfExpr.empty()) break;
-                }
-                if (stackOfExpr.top().id == TokenId::Multiply) {
-                    expr x = output.back();
-                    output.pop_back();
-                    expr y = output.back();
-                    output.pop_back();
-                    output.push_back(y * x);
-                    stackOfExpr.pop();
-                    if (stackOfExpr.empty()) break;
-                }
-                if (stackOfExpr.top().id == TokenId::Divide) {
-                    expr x = output.back();
-                    output.pop_back();
-                    expr y = output.back();
-                    output.pop_back();
-                    output.push_back(y / x);
-                    stackOfExpr.pop();
-                    if (stackOfExpr.empty()) break;
-                }
-                if (stackOfExpr.top().id == TokenId::Power) {
-                    expr x = output.back();
-                    output.pop_back();
-                    expr y = output.back();
-                    output.pop_back();
-                    output.push_back(pow(y, x));
-                    stackOfExpr.pop();
-                    if (stackOfExpr.empty()) break;
-                }
                 break;
-            case TokenId::Plus:
-            case TokenId::Minus:
-            case TokenId::Multiply:
-            case TokenId::Divide:
-            case TokenId::Power:
+
+                case TokenId::Plus:
+                case TokenId::Minus:
+                case TokenId::Multiply:
+                case TokenId::Divide:
+                case TokenId::Power:
+                    need_oper = false;
                 if (stackOfExpr.empty()) {
                     stackOfExpr.push(tokenHelper);
                     break;
                 }
-                while (true) {
-                    if ((!stackOfExpr.empty()) && stackOfExpr.top().id != TokenId::LParen &&
-                        stackOfExpr.top().id != TokenId::RParen) {
-                        if ((tokenHelper.associativity() == Associativity::Left &&
-                             tokenHelper.op_precedence() <= stackOfExpr.top().op_precedence()) ||
-                            (tokenHelper.associativity() == Associativity::Right &&
-                             tokenHelper.op_precedence() < stackOfExpr.top().op_precedence())
-                                ) {
-                            if (stackOfExpr.top().id == TokenId::Plus) {
-                                expr x = output.back();
-                                output.pop_back();
-                                expr y = output.back();
-                                output.pop_back();
-                                output.push_back(y + x);
-                                stackOfExpr.pop();
-                                if (stackOfExpr.empty()) break;
-                            }
-                            if (stackOfExpr.top().id == TokenId::Minus) {
-                                expr x = output.back();
-                                output.pop_back();
-                                expr y = output.back();
-                                output.pop_back();
-                                output.push_back(y - x);
-                                stackOfExpr.pop();
-                                if (stackOfExpr.empty()) break;
-                            }
-                            if (stackOfExpr.top().id == TokenId::Multiply) {
-                                expr x = output.back();
-                                output.pop_back();
-                                expr y = output.back();
-                                output.pop_back();
-                                output.push_back(y * x);
-                                stackOfExpr.pop();
-                                if (stackOfExpr.empty()) break;
-                            }
-                            if (stackOfExpr.top().id == TokenId::Divide) {
-                                expr x = output.back();
-                                output.pop_back();
-                                expr y = output.back();
-                                output.pop_back();
-                                output.push_back(y / x);
-                                stackOfExpr.pop();
-                                if (stackOfExpr.empty()) break;
-                            }
-                            if (stackOfExpr.top().id == TokenId::Power) {
-                                expr x = output.back();
-                                output.pop_back();
-                                expr y = output.back();
-                                output.pop_back();
-                                output.push_back(pow(y, x));
-                                stackOfExpr.pop();
-                                if (stackOfExpr.empty()) break;
-                            }
-                            break;
-                        } else {
-                            break;
-                        }
-                    } else {
-                        break;
+                while (stackOfExpr.top().id != TokenId::LParen &&
+                       (stackOfExpr.top().op_precedence() > tokenHelper.op_precedence() ||
+                        (stackOfExpr.top().op_precedence() == tokenHelper.op_precedence() &&
+                         tokenHelper.associativity() == Associativity::Left
+                        )
+                       )) {
+                    if (stackOfExpr.top().identifier == "sin"
+                        ||
+                        stackOfExpr.top().identifier == "cos"
+                        ||
+                        stackOfExpr.top().identifier == "log") {
+                        if (output.empty()) throw parse_error("not enough numbers to apply function");
+                        x = output.back();
+                        output.pop_back();
+                        if (stackOfExpr.top().identifier == "sin") output.push_back(sin(x));
+                        if (stackOfExpr.top().identifier == "cos") output.push_back(cos(x));
+                        if (stackOfExpr.top().identifier == "log") output.push_back(log(x));
+                        stackOfExpr.pop();
+                    }
+                    if (stackOfExpr.top().id == TokenId::Plus) {
+                        if (output.size() < 2) throw parse_error("not enough numbers");
+                        x = output.back();
+                        output.pop_back();
+                        y = output.back();
+                        output.pop_back();
+                        output.push_back(y + x);
+                        stackOfExpr.pop();
+                        if (stackOfExpr.empty()) break;
+                    }
+                    if (stackOfExpr.top().id == TokenId::Minus) {
+                        if (output.size() < 2) throw parse_error("not enough numbers");
+                        x = output.back();
+                        output.pop_back();
+                        y = output.back();
+                        output.pop_back();
+                        output.push_back(y - x);
+                        stackOfExpr.pop();
+                        if (stackOfExpr.empty()) break;
+                    }
+                    if (stackOfExpr.top().id == TokenId::Multiply) {
+                        if (output.size() < 2) throw parse_error("not enough numbers");
+                        x = output.back();
+                        output.pop_back();
+                        y = output.back();
+                        output.pop_back();
+                        output.push_back(y * x);
+                        stackOfExpr.pop();
+                        if (stackOfExpr.empty()) break;
+                    }
+                    if (stackOfExpr.top().id == TokenId::Divide) {
+                        if (output.size() < 2) throw parse_error("not enough numbers");
+                        x = output.back();
+                        output.pop_back();
+                        y = output.back();
+                        output.pop_back();
+                        output.push_back(y / x);
+                        stackOfExpr.pop();
+                        if (stackOfExpr.empty()) break;
+                    }
+                    if (stackOfExpr.top().id == TokenId::Power) {
+                        if (output.size() < 2) throw parse_error("not enough numbers");
+                        x = output.back();
+                        output.pop_back();
+                        y = output.back();
+                        output.pop_back();
+                        output.push_back(pow(y, x));
+                        stackOfExpr.pop();
+                        if (stackOfExpr.empty()) break;
                     }
                 }
                 stackOfExpr.push(tokenHelper);
-                break;
-
-
+            }
         }
-//        prevToken = tokenHelper.id;
+        prevToken = tokenHelper.id;
         if (tokenHelper.id == TokenId::End) break;
     }
-    return output.front();
+
+    return output.
+
+            front();
+
 }
 
 bool operator==(const expr &a, const expr &b) {
@@ -305,8 +307,8 @@ std::ostream &operator<<(std::ostream &os, const expr &e) {
     return os;
 }
 
-std::ostream &operator<<(std::ostream &os, const fmt_expr &e) {
-    e.e->write(os, e.fmt);
+std::ostream &operator<<(std::ostream &os, const fmt_expr &f) {
+    f.e->write(os, f.fmt);
     return os;
 }
 
@@ -341,3 +343,5 @@ expr cos(expr e) {
 expr log(expr e) {
     return std::make_shared<exprs::operator_log>(exprs::operator_log(std::move(e)));
 }
+
+

@@ -1,22 +1,23 @@
-#include <iostream>
 #include "cmdline.hpp" // parse_command
 #include "app.hpp" // handle_expr_line
+#include "iostream"
 
 int main(int argc, char *argv[]) {
-    std::vector<Commands::Command> commands(argc - 1);
+
+    std::vector<Commands::Command> commands;
+
+    commands.reserve(argc - 1);
     for (int i = 0; i < argc - 1; i++) {
-        commands[i] = parse_command(argv[i + 1]);
+        commands.push_back(parse_command(argv[i + 1]));
     }
 
-    std::string line;
-    while (getline(std::cin, line)) {
+    std::string lajn;
+
+    while (std::getline(std::cin, lajn)) {
         try {
-            handle_expr_line(std::cout, line, commands);
-        }
-        catch (...) {
-            std::cout << "! " << std::endl;
+            handle_expr_line(std::cout, lajn, commands);
+        } catch (const std::exception &e) {
+            std::cout << "! error: " << e.what() << std::endl;
         }
     }
-
-    return 0;
 }

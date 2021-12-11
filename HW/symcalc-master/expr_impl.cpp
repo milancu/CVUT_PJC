@@ -28,7 +28,7 @@ namespace exprs {
     }
 
     bool number::equals(const expr_base &b) const {
-        if(const number* v = dynamic_cast<number const*>(b.shared_from_this().get())) {
+        if (const number *v = dynamic_cast<number const *>(b.shared_from_this().get())) {
             return v->num == num;
         }
         return false;
@@ -63,7 +63,7 @@ namespace exprs {
     }
 
     bool variable::equals(const expr_base &b) const {
-        if(const variable* v = dynamic_cast<variable const*>(b.shared_from_this().get())) {
+        if (const variable *v = dynamic_cast<variable const *>(b.shared_from_this().get())) {
             return v->var == var;
         }
         return false;
@@ -79,9 +79,9 @@ namespace exprs {
 
     void operator_plus::write(std::ostream &out, expr_base::WriteFormat fmt) const {
         if (fmt == expr_base::WriteFormat::Infix) {
-            out << "(" << fmt_expr{operand1, fmt} << sign << fmt_expr{operand2, fmt} << ")";
+            out << "(" << fmt_expr{operand1, fmt} << " " << sign << " " <<fmt_expr{operand2, fmt} << ")";
         } else if (fmt == expr_base::WriteFormat::Postfix) {
-            out << "(" << fmt_expr{operand1, fmt} << " " << fmt_expr{operand2, fmt} << " " << sign << ")";
+            out << fmt_expr{operand1, fmt} << " " << fmt_expr{operand2, fmt} << " " << sign ;
         } else if (fmt == expr_base::WriteFormat::Prefix) {
             out << "(" << sign << " " << fmt_expr{operand1, fmt} << " " << fmt_expr{operand2, fmt} << ")";
         }
@@ -108,7 +108,7 @@ namespace exprs {
     }
 
     bool operator_plus::equals(const expr_base &b) const {
-        if(const operator_plus* value = dynamic_cast<operator_plus const*>(b.shared_from_this().get())) {
+        if (const operator_plus *value = dynamic_cast<operator_plus const *>(b.shared_from_this().get())) {
             return value->operand1 == operand1 && value->operand2 == operand2;
         }
         return false;
@@ -124,9 +124,9 @@ namespace exprs {
 
     void operator_minus::write(std::ostream &out, expr_base::WriteFormat fmt) const {
         if (fmt == expr_base::WriteFormat::Infix) {
-            out << "(" << fmt_expr{operand1, fmt} << sign << fmt_expr{operand2, fmt} << ")";
+            out << "(" << fmt_expr{operand1, fmt} << " " << sign << " " <<fmt_expr{operand2, fmt} << ")";
         } else if (fmt == expr_base::WriteFormat::Postfix) {
-            out << "(" << fmt_expr{operand1, fmt} << " " << fmt_expr{operand2, fmt} << " " << sign << ")";
+            out << fmt_expr{operand1, fmt} << " " << fmt_expr{operand2, fmt} << " " << sign ;
         } else if (fmt == expr_base::WriteFormat::Prefix) {
             out << "(" << sign << " " << fmt_expr{operand1, fmt} << " " << fmt_expr{operand2, fmt} << ")";
         }
@@ -143,18 +143,15 @@ namespace exprs {
     expr operator_minus::simplify() const {
         expr op1 = operand1->simplify();
         expr op2 = operand2->simplify();
-        if (op1 == expr::ZERO) {
-            return op2->shared_from_this();
-        } else if (op2 == expr::ZERO) {
-            return op1->shared_from_this();
-        } else {
-            return std::make_shared<exprs::operator_minus>(op1, op2);
+        if (op2 == expr::ZERO) {
+            return op1;
         }
+        return std::make_shared<exprs::operator_minus>(operator_minus(op1, op2));
     }
 
 
     bool operator_minus::equals(const expr_base &b) const {
-        if(const operator_minus* value = dynamic_cast<operator_minus const*>(b.shared_from_this().get())) {
+        if (const operator_minus *value = dynamic_cast<operator_minus const *>(b.shared_from_this().get())) {
             return value->operand1 == operand1 && value->operand2 == operand2;
         }
         return false;
@@ -170,9 +167,9 @@ namespace exprs {
 
     void operator_multiply::write(std::ostream &out, expr_base::WriteFormat fmt) const {
         if (fmt == expr_base::WriteFormat::Infix) {
-            out << "(" << fmt_expr{operand1, fmt} << sign << fmt_expr{operand2, fmt} << ")";
+            out << "(" << fmt_expr{operand1, fmt} << " " << sign << " " <<fmt_expr{operand2, fmt} << ")";
         } else if (fmt == expr_base::WriteFormat::Postfix) {
-            out << "(" << fmt_expr{operand1, fmt} << " " << fmt_expr{operand2, fmt} << " " << sign << ")";
+            out << fmt_expr{operand1, fmt} << " " << fmt_expr{operand2, fmt} << " " << sign ;
         } else if (fmt == expr_base::WriteFormat::Prefix) {
             out << "(" << sign << " " << fmt_expr{operand1, fmt} << " " << fmt_expr{operand2, fmt} << ")";
         }
@@ -203,7 +200,7 @@ namespace exprs {
     }
 
     bool operator_multiply::equals(const expr_base &b) const {
-        if(const operator_multiply* value = dynamic_cast<operator_multiply const*>(b.shared_from_this().get())) {
+        if (const operator_multiply *value = dynamic_cast<operator_multiply const *>(b.shared_from_this().get())) {
             return value->operand1 == operand1 && value->operand2 == operand2;
         }
         return false;
@@ -219,9 +216,9 @@ namespace exprs {
 
     void operator_divide::write(std::ostream &out, expr_base::WriteFormat fmt) const {
         if (fmt == expr_base::WriteFormat::Infix) {
-            out << "(" << fmt_expr{operand1, fmt} << sign << fmt_expr{operand2, fmt} << ")";
+            out << "(" << fmt_expr{operand1, fmt} << " " << sign << " " <<fmt_expr{operand2, fmt} << ")";
         } else if (fmt == expr_base::WriteFormat::Postfix) {
-            out << "(" << fmt_expr{operand1, fmt} << " " << fmt_expr{operand2, fmt} << " " << sign << ")";
+            out << fmt_expr{operand1, fmt} << " " << fmt_expr{operand2, fmt} << " " << sign ;
         } else if (fmt == expr_base::WriteFormat::Prefix) {
             out << "(" << sign << " " << fmt_expr{operand1, fmt} << " " << fmt_expr{operand2, fmt} << ")";
         }
@@ -235,7 +232,7 @@ namespace exprs {
         auto f = std::make_shared<operator_multiply>(operand1->derive(variable), operand2);
         auto g = std::make_shared<operator_multiply>(operand1, operand2->derive(variable));
         auto ff = std::make_shared<operator_minus>(operator_minus(f, g));
-        auto gg = std::make_shared<operator_pow>(operator_pow(expr::number(2), operand2));
+        auto gg = std::make_shared<operator_pow>(operator_pow(operand2, expr::number(2)));
         return std::make_shared<operator_divide>(operator_divide(ff, gg));
     }
 
@@ -254,7 +251,7 @@ namespace exprs {
     }
 
     bool operator_divide::equals(const expr_base &b) const {
-        if(const operator_divide* value = dynamic_cast<operator_divide const*>(b.shared_from_this().get())) {
+        if (const operator_divide *value = dynamic_cast<operator_divide const *>(b.shared_from_this().get())) {
             return value->operand1 == operand1 && value->operand2 == operand2;
         }
         return false;
@@ -270,9 +267,9 @@ namespace exprs {
 
     void operator_pow::write(std::ostream &out, expr_base::WriteFormat fmt) const {
         if (fmt == expr_base::WriteFormat::Infix) {
-            out << "(" << fmt_expr{operand1, fmt} << sign << fmt_expr{operand2, fmt} << ")";
+            out << "(" << fmt_expr{operand1, fmt} << " " << sign << " " <<fmt_expr{operand2, fmt} << ")";
         } else if (fmt == expr_base::WriteFormat::Postfix) {
-            out << "(" << fmt_expr{operand1, fmt} << " " << fmt_expr{operand2, fmt} << " " << sign << ")";
+            out << fmt_expr{operand1, fmt} << " " << fmt_expr{operand2, fmt} << " " << sign ;
         } else if (fmt == expr_base::WriteFormat::Prefix) {
             out << "(" << sign << " " << fmt_expr{operand1, fmt} << " " << fmt_expr{operand2, fmt} << ")";
         }
@@ -306,8 +303,10 @@ namespace exprs {
     }
 
     bool operator_pow::equals(const expr_base &b) const {
-        auto expr = dynamic_cast<operator_pow const *>(b.shared_from_this().get());
-        return (expr->operand1 == this->operand1 && expr->operand2 == this->operand2);
+        if (const operator_pow *value = dynamic_cast<operator_pow const *>(b.shared_from_this().get())) {
+            return value->operand1 == operand1 && value->operand2 == operand2;
+        }
+        return false;
     }
     //</editor-fold>
 
@@ -319,9 +318,9 @@ namespace exprs {
 
     void operator_sinus::write(std::ostream &out, expr_base::WriteFormat fmt) const {
         if (fmt == expr_base::WriteFormat::Infix) {
-            out << "(" << fmt_expr{operand1, fmt} << sign << ")";
+            out << sign << "(" << fmt_expr{operand1, fmt}<< ")";
         } else if (fmt == expr_base::WriteFormat::Postfix) {
-            out << "(" << fmt_expr{operand1, fmt} << " " << sign << ")";
+            out << fmt_expr{operand1, fmt} << " " << sign;
         } else if (fmt == expr_base::WriteFormat::Prefix) {
             out << "(" << sign << " " << fmt_expr{operand1, fmt} << ")";
         }
@@ -343,7 +342,7 @@ namespace exprs {
     }
 
     bool operator_sinus::equals(const expr_base &b) const {
-        if(const operator_sinus* value = dynamic_cast<operator_sinus const*>(b.shared_from_this().get())) {
+        if (const operator_sinus *value = dynamic_cast<operator_sinus const *>(b.shared_from_this().get())) {
             return value->operand1 == operand1;
         }
         return false;
@@ -358,9 +357,9 @@ namespace exprs {
 
     void operator_cosinus::write(std::ostream &out, expr_base::WriteFormat fmt) const {
         if (fmt == expr_base::WriteFormat::Infix) {
-            out << "(" << fmt_expr{operand1, fmt} << sign << ")";
+            out << sign << "(" << fmt_expr{operand1, fmt}<< ")";
         } else if (fmt == expr_base::WriteFormat::Postfix) {
-            out << "(" << fmt_expr{operand1, fmt} << " " << sign << ")";
+            out << fmt_expr{operand1, fmt} << " " << sign;
         } else if (fmt == expr_base::WriteFormat::Prefix) {
             out << "(" << sign << " " << fmt_expr{operand1, fmt} << ")";
         }
@@ -383,7 +382,7 @@ namespace exprs {
     }
 
     bool operator_cosinus::equals(const expr_base &b) const {
-        if(const operator_cosinus* value = dynamic_cast<operator_cosinus const*>(b.shared_from_this().get())) {
+        if (const operator_cosinus *value = dynamic_cast<operator_cosinus const *>(b.shared_from_this().get())) {
             return value->operand1 == operand1;
         }
         return false;
@@ -398,9 +397,9 @@ namespace exprs {
 
     void operator_log::write(std::ostream &out, expr_base::WriteFormat fmt) const {
         if (fmt == expr_base::WriteFormat::Infix) {
-            out << "(" << fmt_expr{operand1, fmt} << sign << ")";
+            out << sign << "(" << fmt_expr{operand1, fmt}<< ")";
         } else if (fmt == expr_base::WriteFormat::Postfix) {
-            out << "(" << fmt_expr{operand1, fmt} << " " << sign << ")";
+            out << fmt_expr{operand1, fmt} << " " << sign;
         } else if (fmt == expr_base::WriteFormat::Prefix) {
             out << "(" << sign << " " << fmt_expr{operand1, fmt} << ")";
         }
@@ -426,7 +425,7 @@ namespace exprs {
     }
 
     bool operator_log::equals(const expr_base &b) const {
-        if(const operator_log* value = dynamic_cast<operator_log const*>(b.shared_from_this().get())) {
+        if (const operator_log *value = dynamic_cast<operator_log const *>(b.shared_from_this().get())) {
             return value->operand1 == operand1;
         }
         return false;

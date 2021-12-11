@@ -118,10 +118,11 @@ TEST_CASE("Parsing and writing", "[parse_write][valid]") {
         { "1",                "1" },
         { "12.34",            "12.34" },
 
-        // If you read & write numbers using iostreams with default settings,
-        // this is what you get, but we don't test it.
-        // { "1.26e6",           "1.26e+06" },
-        // { "1.26e-6",          "1.26e-06" },
+//         If you read & write numbers using iostreams with default settings,
+//         this is what you get, but we don't test it.
+//         { "1.26e6",           "1.26e+06" },
+//         { "1.26e-6",          "1.26e-06" },
+        {"1.68 + z+32.47^ y +13.38 - 24.10+ 3.97", "(+ (- (+ (+ (+ 1.68 z) (^ 32.47 y)) 13.38) 24.1) 3.97)"},
 
 
         { "variable",         "variable" },
