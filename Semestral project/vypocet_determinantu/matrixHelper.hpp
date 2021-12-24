@@ -22,14 +22,14 @@ namespace matrixHelper {
         return sqrt(size);
     }
 
-    int getSizeofTheBigestValue(const Matrix &matrix, int column) {
+/*    int getSizeofTheBigestValue(const Matrix &matrix, int column) {
         int max = *max_element(matrix.getValues().at(column).begin(), matrix.getValues().at(column).end());
         int min = abs(*min_element(matrix.getValues().at(column).begin(), matrix.getValues().at(column).end()));
         int sizeMax = log10(max);
         int sizeMin = log10(min);
 
         return sizeMax > sizeMin ? sizeMax + 1 : sizeMin + 1;
-    }
+    }*/
 
     int get_random_int() {
         static std::mt19937 mt{std::random_device{}()};
@@ -37,17 +37,15 @@ namespace matrixHelper {
         return dist(mt);
     }
 
-    std::vector<std::vector<int>> generateRandomValues() {
-        int dimension = 5; //In future make it random, right now for testing 5 is good
+    std::vector<std::vector<Fraction>> generateRandomValues() {
+        int dimension = 10; //In future make it random, right now for testing 5 is good
 
-        std::vector<std::vector<int>> result;
-        std::vector<int> subVector;
+        std::vector<std::vector<Fraction>> result;
+        std::vector<Fraction> subVector;
 
         for (int i = 0; i < dimension; i++) {
             for (int j = 0; j < dimension; j++) {
-                int value = get_random_int();
-                std::cout << value << std::endl;
-                subVector.push_back(value);
+                subVector.emplace_back(get_random_int(), 1);
             }
             result.push_back(subVector);
             subVector.clear();

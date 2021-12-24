@@ -7,27 +7,28 @@
 
 #include <vector>
 #include <ostream>
+#include "Fraction.hpp"
 
 class Matrix {
 public:
-    explicit Matrix(const std::vector<std::vector<int>>& inputValues);
+    explicit Matrix(const std::vector<std::vector<Fraction>>& inputValues);
 
     ~Matrix() = default;
 
     void swap(int row1, int row2);
 
-    int compute();
+    Fraction compute();
 
     void gaus_elimination();
-
-    void simplify();
-
-    const std::vector<std::vector<int>> &getValues() const;
+    
+    const std::vector<std::vector<Fraction>> &getValues() const;
 
     friend std::ostream &operator<<(std::ostream &os, const Matrix &matrix);
 
+
+
 private:
-    std::vector<std::vector<int>> values;
+    std::vector<std::vector<Fraction>> values;
     int dimension;
 };
 

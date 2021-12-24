@@ -3,6 +3,8 @@
 //
 
 #include "Matrix.hpp"
+#include "Fraction.hpp"
+#include "Fraction.cpp"
 #include <utility>
 #include <vector>
 #include <fstream>
@@ -13,21 +15,18 @@ void Matrix::swap(int row1, int row2) {
     std::swap(values[row1], values[row2]);
 }
 
-int Matrix::compute() {
-    int determinant = 1;
+Fraction Matrix::compute() {
+    Fraction determinant = {1, 1};
     int i = 0;
     for (const auto &row: values) {
         determinant = determinant * row[i];
         i++;
     }
+//    determinant.simplify();
     return determinant;
 }
 
-void Matrix::simplify() {
-
-}
-
-Matrix::Matrix(const std::vector<std::vector<int>> &inputValues) : dimension(inputValues.size()) {
+Matrix::Matrix(const std::vector<std::vector<Fraction>> &inputValues) : dimension(inputValues.size()) {
     values = inputValues;
 }
 
@@ -41,10 +40,10 @@ std::ostream &operator<<(std::ostream &os, const Matrix &matrix) {
 
         int i = 0;
         for (const auto &value: row) {
-            if (sizeOfValuesInColumn[i] == 0) {
+/*            if (sizeOfValuesInColumn[i] == 0) {
                 sizeOfValuesInColumn[i] = matrixHelper::getSizeofTheBigestValue(matrix, i) + 1;
-            }
-            os << std::fixed << std::setw(sizeOfValuesInColumn[i]) << value << " ";
+            }*/
+            os << std::fixed << value << " ";
             i++;
         }
 
@@ -54,12 +53,21 @@ std::ostream &operator<<(std::ostream &os, const Matrix &matrix) {
     return os;
 }
 
-const std::vector<std::vector<int>> &Matrix::getValues() const {
+const std::vector<std::vector<Fraction>> &Matrix::getValues() const {
     return values;
 }
 
 void Matrix::gaus_elimination() {
+    for (int i = 1; i < dimension; i++) {
+        for (int j = i; j < dimension; j++) {
 
+            Fraction ratio = values.at(j).at(i - 1) / values.at(i - 1).at(i - 1);
+
+            for (int k = 0; k < dimension; k++) {
+                values.at(j).at(k) = values.at(j).at(k) - ratio * values.at(i - 1).at(k);
+            }
+        }
+    }
 }
 
 
