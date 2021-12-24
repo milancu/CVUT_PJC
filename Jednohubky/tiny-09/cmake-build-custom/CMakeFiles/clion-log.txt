@@ -1,9 +1,9 @@
-C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.123\bin\cmake\win\bin\cmake.exe -G "Visual Studio 17 2022" D:\Vysoka_Skola\3.Semestr\PJC\Projekty\b211_bd6b36pjc\Jednohubky\tiny-09
--- Selecting Windows SDK version 10.0.19041.0 to target Windows 10.0.22504.
--- The CXX compiler identification is MSVC 19.30.30528.0
+C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.254\bin\cmake\win\bin\cmake.exe -G "Visual Studio 17 2022" D:\Vysoka_Skola\3.Semestr\PJC\Projekty\b211_bd6b36pjc\Jednohubky\tiny-09
+-- Selecting Windows SDK version 10.0.22000.0 to target Windows 10.0.22523.
+-- The CXX compiler identification is MSVC 19.31.30818.0
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/Tools/MSVC/14.30.30528/bin/Hostx64/x64/cl.exe - skipped
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/Tools/MSVC/14.31.30818/bin/Hostx64/x64/cl.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Configuring done

@@ -22,7 +22,6 @@ public:
         if (m_size == m_capacity) {
             reserve((m_capacity + 1) * 2);
         }
-
         m_data[m_size] = val;
         m_size++;
     }

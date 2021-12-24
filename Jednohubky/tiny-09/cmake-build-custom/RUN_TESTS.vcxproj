@@ -23,7 +23,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{3D7DB891-6967-3B01-8471-9D0D17944A8D}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>RUN_TESTS</ProjectName>
@@ -76,7 +76,7 @@
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.123\bin\cmake\win\bin\ctest.exe --force-new-ctest-process -C $(Configuration)
+C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.254\bin\cmake\win\bin\ctest.exe --force-new-ctest-process -C $(Configuration)
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -98,7 +98,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.123\bin\cmake\win\bin\ctest.exe --force-new-ctest-process -C $(Configuration)
+C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.254\bin\cmake\win\bin\ctest.exe --force-new-ctest-process -C $(Configuration)
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -120,7 +120,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.123\bin\cmake\win\bin\ctest.exe --force-new-ctest-process -C $(Configuration)
+C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.254\bin\cmake\win\bin\ctest.exe --force-new-ctest-process -C $(Configuration)
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -142,7 +142,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.123\bin\cmake\win\bin\ctest.exe --force-new-ctest-process -C $(Configuration)
+C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.254\bin\cmake\win\bin\ctest.exe --force-new-ctest-process -C $(Configuration)
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
