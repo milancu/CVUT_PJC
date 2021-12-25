@@ -76,6 +76,14 @@ Fraction operator/(const Fraction &rhs, const Fraction &lhs) {
     return {rhs.numerator * lhs.denominator, rhs.denominator * lhs.numerator};
 }
 
+bool Fraction::operator==(const int &rhs) const {
+    return this->numerator/this->denominator == rhs;
+}
+
+bool Fraction::operator!=(const int &rhs) const {
+    return this->numerator/this->denominator != rhs;
+}
+
 
 
 

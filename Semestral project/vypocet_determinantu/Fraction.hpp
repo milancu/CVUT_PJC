@@ -38,6 +38,10 @@ public:
     friend Fraction operator*(const Fraction &rhs, const Fraction &lhs);
 
     friend std::ostream &operator<<(std::ostream &os, const Fraction &fraction);
+
+    bool operator==(const int &rhs) const;
+
+    bool operator!=(const int &rhs) const;
 };
 
 

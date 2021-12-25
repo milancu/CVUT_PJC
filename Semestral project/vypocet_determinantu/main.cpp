@@ -7,7 +7,7 @@
 #include "Matrix.hpp"
 #include "Matrix.cpp"
 
-template <typename TimePoint>
+template<typename TimePoint>
 std::chrono::milliseconds to_ms(TimePoint tp) {
     return std::chrono::duration_cast<std::chrono::milliseconds>(tp);
 }
@@ -18,10 +18,9 @@ int main() {
 
     std::vector<std::vector<Fraction>> values;
 
-    std::fstream  inFile;
-    std::string fileName = "2.txt";
-    std::string source = R"(files\)";
-    inFile.open("D:\\Vysoka_Skola\\3.Semestr\\PJC\\Projekty\\b211_bd6b36pjc\\Semestral project\\vypocet_determinantu\\files\\4.txt");
+    std::fstream inFile;
+    inFile.open("../files/5.txt");
+
 
     std::vector<Fraction> vectorHelper = fileReader::readMatrixFromFile(inFile);
     int vectorHelpersSize = vectorHelper.size();
@@ -43,9 +42,7 @@ int main() {
 
     std::cout << "Determinat : " << matrix.compute() << std::endl;
 
-//    inFile.close();
-
-
+    inFile.close();
 
     auto end = std::chrono::high_resolution_clock::now();
     std::cout << "Needed " << to_ms(end - start).count() << " ms to finish.\n";

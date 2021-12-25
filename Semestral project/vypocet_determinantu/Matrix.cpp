@@ -22,7 +22,6 @@ Fraction Matrix::compute() {
         determinant = determinant * row[i];
         i++;
     }
-//    determinant.simplify();
     return determinant;
 }
 
@@ -40,9 +39,6 @@ std::ostream &operator<<(std::ostream &os, const Matrix &matrix) {
 
         int i = 0;
         for (const auto &value: row) {
-/*            if (sizeOfValuesInColumn[i] == 0) {
-                sizeOfValuesInColumn[i] = matrixHelper::getSizeofTheBigestValue(matrix, i) + 1;
-            }*/
             os << std::fixed << value << " ";
             i++;
         }
@@ -59,12 +55,40 @@ const std::vector<std::vector<Fraction>> &Matrix::getValues() const {
 
 void Matrix::gaus_elimination() {
     for (int i = 1; i < dimension; i++) {
+        if (values.at(i - 1).at(i - 1) == 0) {
+            std::cerr << "Mathematical Error!";
+            exit(0);
+        }
         for (int j = i; j < dimension; j++) {
-
             Fraction ratio = values.at(j).at(i - 1) / values.at(i - 1).at(i - 1);
 
             for (int k = 0; k < dimension; k++) {
                 values.at(j).at(k) = values.at(j).at(k) - ratio * values.at(i - 1).at(k);
+            }
+        }
+    }
+}
+
+void Matrix::simplify() {
+    std::vector<int> helper(dimension, 0);
+
+    for (int i = 0; i < dimension; i++) {
+        int c = 0;
+        for (int j = 0; j < dimension; j++) {
+            if (values.at(i).at(j) != 0) {
+                break;
+            } else {
+                c++;
+            }
+        }
+        helper[i] = (c);
+    }
+
+    for (size_t i = 0; i < helper.size() - 1; ++i) {
+        for (size_t j = 0; j < helper.size() - i - 1; ++j) {
+            if (helper.at(j) > helper.at(j + 1)) {
+                std::swap(helper.at(j), helper.at(j + 1));
+                swap(j, j + 1);
             }
         }
     }

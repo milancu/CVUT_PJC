@@ -17,6 +17,8 @@ public:
 
     void swap(int row1, int row2);
 
+    void simplify();
+
     Fraction compute();
 
     void gaus_elimination();
