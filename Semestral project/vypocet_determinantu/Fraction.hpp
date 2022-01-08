@@ -25,6 +25,10 @@ public:
 
     void simplify();
 
+    int toInt();
+
+    Fraction absoluteFraction(const Fraction &rhs);
+
     int gcd(int a, int b);
 
     friend Fraction operator+(const Fraction &rhs, const Fraction &lhs);
@@ -42,6 +46,22 @@ public:
     bool operator==(const int &rhs) const;
 
     bool operator!=(const int &rhs) const;
+
+    bool operator<(const int &rhs) const;
+
+    bool operator>(const int &rhs) const;
+
+    bool operator<=(const int &rhs) const;
+
+    bool operator>=(const int &rhs) const;
+
+    bool operator<(const Fraction &rhs) const;
+
+    bool operator>(const Fraction &rhs) const;
+
+    bool operator<=(const Fraction &rhs) const;
+
+    bool operator>=(const Fraction &rhs) const;
 };
 
 

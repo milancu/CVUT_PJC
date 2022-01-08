@@ -28,6 +28,7 @@ public:
     friend std::ostream &operator<<(std::ostream &os, const Matrix &matrix);
 
 
+    int getDimension() const;
 
 private:
     std::vector<std::vector<Fraction>> values;

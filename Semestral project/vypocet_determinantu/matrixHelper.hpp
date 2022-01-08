@@ -22,23 +22,41 @@ namespace matrixHelper {
         return sqrt(size);
     }
 
-/*    int getSizeofTheBigestValue(const Matrix &matrix, int column) {
-        int max = *max_element(matrix.getValues().at(column).begin(), matrix.getValues().at(column).end());
-        int min = abs(*min_element(matrix.getValues().at(column).begin(), matrix.getValues().at(column).end()));
-        int sizeMax = log10(max);
-        int sizeMin = log10(min);
+    int numDigits(int number) {
+        int count = 0;
+        while (number != 0)
+        {
+            number = number / 10;
+            ++count;
+        }
+        return count+2;
+    }
 
-        return sizeMax > sizeMin ? sizeMax + 1 : sizeMin + 1;
-    }*/
+    int getSizeofTheBigestValue(const Matrix &matrix, int column) {
+        Fraction max = {-std::numeric_limits<int>::infinity(), 1};
+        Fraction min = {std::numeric_limits<int>::infinity(), 1};
+        for (int i = 0; i < matrix.getDimension(); i++) {
+            if (matrix.getValues().at(i).at(column) > max) {
+                max = matrix.getValues().at(i).at(column);
+            }
+            if (matrix.getValues().at(i).at(column) < min) {
+                min = matrix.getValues().at(i).at(column);
+            }
+        }
+        if (min.absoluteFraction(min) > max) {
+            return numDigits(min.toInt());
+        }
+        return numDigits(max.toInt());
+    }
 
     int get_random_int() {
         static std::mt19937 mt{std::random_device{}()};
-        static std::uniform_real_distribution<> dist(-1000, 1000);
+        static std::uniform_real_distribution<> dist(-15, 15);
         return dist(mt);
     }
 
     std::vector<std::vector<Fraction>> generateRandomValues() {
-        int dimension = 10; //In future make it random, right now for testing 5 is good
+        int dimension = 4; //In future make it random, right now for testing 5 is good
 
         std::vector<std::vector<Fraction>> result;
         std::vector<Fraction> subVector;

@@ -31,7 +31,11 @@ Matrix::Matrix(const std::vector<std::vector<Fraction>> &inputValues) : dimensio
 
 std::ostream &operator<<(std::ostream &os, const Matrix &matrix) {
 
-    std::vector<int> sizeOfValuesInColumn(matrix.dimension, 0);
+    std::vector<int> sizeOfValuesInColumn{matrix.dimension, 0};
+
+    for (int i = 0; i < matrix.dimension; i++) {
+        sizeOfValuesInColumn[i] = (matrixHelper::getSizeofTheBigestValue(matrix, i));
+    }
 
     for (const auto &row: matrix.values) {
 
@@ -39,7 +43,7 @@ std::ostream &operator<<(std::ostream &os, const Matrix &matrix) {
 
         int i = 0;
         for (const auto &value: row) {
-            os << std::fixed << value << " ";
+            os << std::fixed << std::setw(sizeOfValuesInColumn[i]) << value << " ";
             i++;
         }
 
@@ -55,6 +59,7 @@ const std::vector<std::vector<Fraction>> &Matrix::getValues() const {
 
 void Matrix::gaus_elimination() {
     for (int i = 1; i < dimension; i++) {
+        simplify();
         if (values.at(i - 1).at(i - 1) == 0) {
             std::cerr << "Mathematical Error!";
             exit(0);
@@ -62,9 +67,30 @@ void Matrix::gaus_elimination() {
         for (int j = i; j < dimension; j++) {
             Fraction ratio = values.at(j).at(i - 1) / values.at(i - 1).at(i - 1);
 
+            std::cout << "  ";
+            for (auto &value: values.at(i - 1)) {
+                std::cout << std::fixed << std::setw(5) << value << " ";
+            }
+            std::cout << " *" << ratio << std::endl;
+            std::cout << " -";
+            for (auto &value: values.at(j)) {
+                std::cout << std::fixed << std::setw(5) << value << " ";
+            }
+
+            std::cout << '\n';
+            for (auto &value: values.at(j)) {
+                std::cout << std::fixed << std::setw(5) << "--------";
+            }
+            std::cout << '\n';
+            std::cout << "  ";
+
             for (int k = 0; k < dimension; k++) {
                 values.at(j).at(k) = values.at(j).at(k) - ratio * values.at(i - 1).at(k);
+                 std::cout << std::fixed << std::setw(5) << values.at(j).at(k) << " ";
             }
+
+            std::cout << '\n';
+            std::cout << '\n';
         }
     }
 }
@@ -92,6 +118,10 @@ void Matrix::simplify() {
             }
         }
     }
+}
+
+int Matrix::getDimension() const {
+    return dimension;
 }
 
 

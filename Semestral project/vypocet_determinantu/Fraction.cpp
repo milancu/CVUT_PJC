@@ -69,7 +69,12 @@ int Fraction::gcd(int a, int b) {
 }
 
 std::ostream &operator<<(std::ostream &os, const Fraction &fraction) {
-    return os << fraction.numerator / fraction.denominator;
+    if(fraction.denominator == 1){
+        return os << fraction.numerator;
+    } else if(fraction.numerator == 0){
+        return os << 0;
+    }
+    return os << fraction.numerator <<"/"<< fraction.denominator;
 }
 
 Fraction operator/(const Fraction &rhs, const Fraction &lhs) {
@@ -77,11 +82,52 @@ Fraction operator/(const Fraction &rhs, const Fraction &lhs) {
 }
 
 bool Fraction::operator==(const int &rhs) const {
-    return this->numerator/this->denominator == rhs;
+    return this->numerator / this->denominator == rhs;
 }
 
 bool Fraction::operator!=(const int &rhs) const {
-    return this->numerator/this->denominator != rhs;
+    return this->numerator / this->denominator != rhs;
+}
+
+bool Fraction::operator<(const int &rhs) const {
+    return this->numerator/this->denominator < rhs;
+}
+
+bool Fraction::operator>(const int &rhs) const {
+    return this->numerator/this->denominator > rhs;
+}
+
+bool Fraction::operator<=(const int &rhs) const {
+    return this->numerator/this->denominator <= rhs;
+}
+
+bool Fraction::operator>=(const int &rhs) const {
+    return this->numerator/this->denominator >= rhs;
+}
+
+bool Fraction::operator<(const Fraction &rhs) const {
+    return numerator/denominator < rhs.numerator/rhs.denominator;
+}
+
+bool Fraction::operator>(const Fraction &rhs) const {
+    return numerator/denominator > rhs.numerator/rhs.denominator;
+}
+
+bool Fraction::operator<=(const Fraction &rhs) const {
+    return numerator/denominator <= rhs.numerator/rhs.denominator;
+}
+
+bool Fraction::operator>=(const Fraction &rhs) const {
+    return numerator/denominator >= rhs.numerator/rhs.denominator;
+}
+
+
+Fraction Fraction::absoluteFraction(const Fraction &rhs) {
+    return {abs(rhs.numerator), rhs.denominator};
+}
+
+int Fraction::toInt() {
+    return numerator/denominator;
 }
 
 

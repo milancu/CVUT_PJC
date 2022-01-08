@@ -18,20 +18,20 @@ int main() {
 
     std::vector<std::vector<Fraction>> values;
 
-    std::fstream inFile;
-    inFile.open("../files/5.txt");
+//    std::fstream inFile;
+//    inFile.open("../files/5.txt");
+//
+//    std::vector<Fraction> vectorHelper = fileReader::readMatrixFromFile(inFile);
+//    int vectorHelpersSize = vectorHelper.size();
+//    if (matrixHelper::isMatrixValid(vectorHelpersSize)) {
+//        values = fileReader::fillVector(vectorHelper, matrixHelper::getDimension(vectorHelpersSize));
+//        inFile.close();
+//    } else {
+//        std::cout << "Matrix is not valid!\n";
+//        exit(1);
+//    }
 
-
-    std::vector<Fraction> vectorHelper = fileReader::readMatrixFromFile(inFile);
-    int vectorHelpersSize = vectorHelper.size();
-    if (matrixHelper::isMatrixValid(vectorHelpersSize)) {
-        values = fileReader::fillVector(vectorHelper, matrixHelper::getDimension(vectorHelpersSize));
-    } else {
-        std::cout << "Matrix is not valid!\n";
-        exit(1);
-    }
-
-//    values = matrixHelper::generateRandomValues();
+    values = matrixHelper::generateRandomValues();
 
     Matrix matrix = Matrix(values);
     std::cout << "New Matrix created: " << '\n' << matrix << std::endl;
@@ -42,7 +42,6 @@ int main() {
 
     std::cout << "Determinat : " << matrix.compute() << std::endl;
 
-    inFile.close();
 
     auto end = std::chrono::high_resolution_clock::now();
     std::cout << "Needed " << to_ms(end - start).count() << " ms to finish.\n";
