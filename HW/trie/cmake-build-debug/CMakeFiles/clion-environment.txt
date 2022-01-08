@@ -1,3 +1,4 @@
-ToolSet: Ubuntu 20.04 LTS (local)Options: 
+ToolSet: 17.0 (local)@C:\Program Files\Microsoft Visual Studio\2022\Preview
+Options: 
 
 Options:

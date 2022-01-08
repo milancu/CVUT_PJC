@@ -1,4 +1,4 @@
-C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.254\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/phuon/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/ninja/win/ninja.exe -G Ninja "D:\Vysoka_Skola\3.Semestr\PJC\Projekty\b211_bd6b36pjc\Semestral project\determinant"
+C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6461.75\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/phuon/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/ninja/win/ninja.exe -G Ninja "D:\Vysoka_Skola\3.Semestr\PJC\Projekty\b211_bd6b36pjc\Semestral project\determinant"
 -- The C compiler identification is MSVC 19.31.30818.0
 -- The CXX compiler identification is MSVC 19.31.30818.0
 -- Detecting C compiler ABI info

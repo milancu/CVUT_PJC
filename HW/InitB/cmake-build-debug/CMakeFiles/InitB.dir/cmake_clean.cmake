@@ -1,9 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/InitB.dir/main.cpp.obj"
-  "InitB.exe"
-  "InitB.exe.manifest"
+  "CMakeFiles/InitB.dir/main.cpp.o"
+  "CMakeFiles/InitB.dir/main.cpp.o.d"
+  "InitB"
   "InitB.pdb"
-  "libInitB.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

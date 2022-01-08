@@ -1,3 +1,1 @@
-"C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\InitA.dir/objects.a
-C:\msys64\mingw64\bin\ar.exe cr CMakeFiles\InitA.dir/objects.a @CMakeFiles\InitA.dir\objects1.rsp
-C:\msys64\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\InitA.dir/objects.a -Wl,--no-whole-archive -o InitA.exe -Wl,--out-implib,libInitA.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\InitA.dir\linklibs.rsp
+/usr/bin/c++ -g CMakeFiles/InitA.dir/main.cpp.o -o InitA 

@@ -1,7 +1,6 @@
 //
 // Created by Milan on 18.12.2021.
 //
-
 #ifndef VYPOCET_DETERMINANTU_MATRIX_HPP
 #define VYPOCET_DETERMINANTU_MATRIX_HPP
 
@@ -22,7 +21,7 @@ public:
     Fraction compute();
 
     void gaus_elimination();
-    
+
     const std::vector<std::vector<Fraction>> &getValues() const;
 
     friend std::ostream &operator<<(std::ostream &os, const Matrix &matrix);
@@ -35,4 +34,4 @@ private:
     int dimension;
 };
 
-#endif //VYPOCET_DETERMINANTU_MATRIX_HPP
+#endif

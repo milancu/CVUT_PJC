@@ -1,10 +1,8 @@
 //
 // Created by Milan on 18.12.2021.
 //
-
 #include "Matrix.hpp"
 #include "Fraction.hpp"
-#include "Fraction.cpp"
 #include <utility>
 #include <vector>
 #include <fstream>
@@ -33,9 +31,9 @@ std::ostream &operator<<(std::ostream &os, const Matrix &matrix) {
 
     std::vector<int> sizeOfValuesInColumn{matrix.dimension, 0};
 
-    for (int i = 0; i < matrix.dimension; i++) {
-        sizeOfValuesInColumn[i] = (matrixHelper::getSizeofTheBigestValue(matrix, i));
-    }
+//    for (int i = 0; i < matrix.dimension; i++) {
+//        sizeOfValuesInColumn[i] = (matrixHelper::getSizeofTheBigestValue(matrix, i));
+//    }
 
     for (const auto &row: matrix.values) {
 
@@ -43,7 +41,8 @@ std::ostream &operator<<(std::ostream &os, const Matrix &matrix) {
 
         int i = 0;
         for (const auto &value: row) {
-            os << std::fixed << std::setw(sizeOfValuesInColumn[i]) << value << " ";
+//            os << std::fixed << std::setw(sizeOfValuesInColumn[i]) << value << " ";
+            os << std::fixed << std::setw(3) << value << " ";
             i++;
         }
 

@@ -1,10 +1,8 @@
 //
 // Created by Milan on 24.12.2021.
 //
-
 #ifndef VYPOCET_DETERMINANTU_FRACTION_HPP
 #define VYPOCET_DETERMINANTU_FRACTION_HPP
-
 
 #include <ostream>
 
@@ -25,11 +23,9 @@ public:
 
     void simplify();
 
-    int toInt();
+    int toInt() const;
 
-    Fraction absoluteFraction(const Fraction &rhs);
-
-    int gcd(int a, int b);
+    static Fraction absoluteFraction(const Fraction &rhs);
 
     friend Fraction operator+(const Fraction &rhs, const Fraction &lhs);
 
@@ -42,6 +38,8 @@ public:
     friend Fraction operator*(const Fraction &rhs, const Fraction &lhs);
 
     friend std::ostream &operator<<(std::ostream &os, const Fraction &fraction);
+
+    friend bool operator==(const Fraction &rhs, const Fraction &lhs);
 
     bool operator==(const int &rhs) const;
 
@@ -64,5 +62,4 @@ public:
     bool operator>=(const Fraction &rhs) const;
 };
 
-
-#endif //VYPOCET_DETERMINANTU_FRACTION_HPP
+#endif

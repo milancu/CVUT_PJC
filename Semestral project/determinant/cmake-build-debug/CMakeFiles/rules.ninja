@@ -38,7 +38,7 @@ rule CXX_COMPILER__determinant_Debug
 # Rule for linking CXX executable.
 
 rule CXX_EXECUTABLE_LINKER__determinant_Debug
-  command = cmd.exe /C "$PRE_LINK && C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.254\bin\cmake\win\bin\cmake.exe -E vs_link_exe --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100220~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100220~1.0\x86\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~4\2022\Preview\VC\Tools\MSVC\1431~1.308\bin\Hostx86\x86\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  command = cmd.exe /C "$PRE_LINK && C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6461.75\bin\cmake\win\bin\cmake.exe -E vs_link_exe --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100220~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100220~1.0\x86\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~4\2022\Preview\VC\Tools\MSVC\1431~1.308\bin\Hostx86\x86\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 
@@ -47,7 +47,7 @@ rule CXX_EXECUTABLE_LINKER__determinant_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.254\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S"D:\Vysoka_Skola\3.Semestr\PJC\Projekty\b211_bd6b36pjc\Semestral project\determinant" -B"D:\Vysoka_Skola\3.Semestr\PJC\Projekty\b211_bd6b36pjc\Semestral project\determinant\cmake-build-debug"
+  command = C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6461.75\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S"D:\Vysoka_Skola\3.Semestr\PJC\Projekty\b211_bd6b36pjc\Semestral project\determinant" -B"D:\Vysoka_Skola\3.Semestr\PJC\Projekty\b211_bd6b36pjc\Semestral project\determinant\cmake-build-debug"
   description = Re-running CMake...
   generator = 1
 
@@ -56,7 +56,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.254\bin\ninja\win\ninja.exe $FILE_ARG -t clean $TARGETS
+  command = C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6461.75\bin\ninja\win\ninja.exe $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -64,6 +64,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.254\bin\ninja\win\ninja.exe -t targets
+  command = C:\Users\phuon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6461.75\bin\ninja\win\ninja.exe -t targets
   description = All primary targets available:
 

@@ -1,23 +1,456 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakeSettings">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="vypocet_determinantu" targetName="tests" />
+      <config projectName="vypocet_determinantu" targetName="vypocet_determinantu" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
-      <configuration PROFILE_NAME="Debug-Visual Studio" ENABLED="true" CONFIG_NAME="Debug" TOOLCHAIN_NAME="Visual Studio" GENERATION_OPTIONS="-G Ninja" />
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" GENERATION_OPTIONS="-G Ninja" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f76cc9d1-9fd3-4038-80b7-0096577aece2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/.cmake/api/v1/query/cache-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/.cmake/api/v1/reply/cache-v2-d80893872526754455c3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-b82043db2a8d8d6717c0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-7991a52bc75b2f4a05e6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/.cmake/api/v1/reply/index-2022-01-08T20-19-11-0003.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/.cmake/api/v1/reply/target-InitA-Debug-33991ce339001248ba27.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-d06480eadcc461d85546.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/tests-stage-2.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/tests-stage-2.ilk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/Continuous.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/Continuous.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousBuild.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousBuild.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousConfigure.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousConfigure.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousCoverage.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousCoverage.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousMemCheck.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousMemCheck.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousStart.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousStart.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousSubmit.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousSubmit.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousTest.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousTest.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousUpdate.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousUpdate.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/Experimental.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/Experimental.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalBuild.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalBuild.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalConfigure.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalConfigure.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalCoverage.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalCoverage.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalMemCheck.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalMemCheck.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalStart.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalStart.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalSubmit.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalSubmit.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalTest.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalTest.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalUpdate.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalUpdate.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/Nightly.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/Nightly.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyBuild.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyBuild.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyConfigure.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyConfigure.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyCoverage.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyCoverage.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyMemCheck.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyMemCheck.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyMemoryCheck.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyMemoryCheck.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyStart.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyStart.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlySubmit.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlySubmit.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyTest.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyTest.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyUpdate.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyUpdate.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/tests.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/tests.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.cmake/api/v1/reply/codemodel-v2-75f06d50b74fb61bb594.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.cmake/api/v1/reply/index-2022-01-08T17-09-44-0774.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.cmake/api/v1/reply/target-tests-Debug-ef87f905442bd2e86070.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.cmake/api/v1/reply/target-vypocet_determinantu-Debug-e780ea63aff9cb6ceb27.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/tests.dir/Fraction.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/tests.dir/Matrix.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/tests.dir/embed.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/tests.dir/intermediate.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/tests.dir/manifest.rc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/tests.dir/manifest.res" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/tests.dir/tests.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/tests.dir/tests/test.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/tests.dir/vc140.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/vypocet_determinantu.dir/Fraction.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/vypocet_determinantu.dir/Matrix.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/vypocet_determinantu.dir/tests.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CTestTestfile.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/tests.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/.cmake/api/v1/reply/index-2022-01-08T19-02-25-0933.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/CMakeFiles/vypocet_determinantu.dir/compiler_depend.internal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug-wsl/vypocet_determinantu" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/catch.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/cache-v2-87398c1718edc4f29170.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-0f71080bc0aaa6be7ce5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-bd18d04b798861f2aa36.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/index-2022-01-08T20-17-15-0185.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-Continuous-Debug-4b627fc3a3df550ccfae.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-ContinuousBuild-Debug-68af17f6962e2206c3a8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-ContinuousConfigure-Debug-b14e63ebc8e7173b71b1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-ContinuousCoverage-Debug-528bb880d025f7a8f3be.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-ContinuousMemCheck-Debug-7c4f364490519ea27c8a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-ContinuousStart-Debug-bc58cc5fdd94cb84ba5c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-ContinuousSubmit-Debug-212fda8f5c6e126775f9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-ContinuousTest-Debug-c235908f9ff854bc4d2c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-ContinuousUpdate-Debug-8fbe102a07e41d39077f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-Experimental-Debug-851f6342bfa6c21554af.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-ExperimentalBuild-Debug-294046d68fd1ac7aba3c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-ExperimentalConfigure-Debug-7bf749ad40d82beb953a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-ExperimentalCoverage-Debug-355804625e028b26688b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-ExperimentalMemCheck-Debug-e98f2673c02c3024afbd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-ExperimentalStart-Debug-a724c03d4cfbcea010e9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-ExperimentalSubmit-Debug-9015d3afb8f7614997de.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-ExperimentalTest-Debug-bd115d92a35ee095da7f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-ExperimentalUpdate-Debug-f769a1f5fddbea0c27d2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-Nightly-Debug-6072183b90897e5bb59a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-NightlyBuild-Debug-8c228d348bbced5da861.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-NightlyConfigure-Debug-6dc05b2b61e5bfefc741.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-NightlyCoverage-Debug-72d215dbb40c9b0e613d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-NightlyMemCheck-Debug-18fb99f9f07658e5c143.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-NightlyMemoryCheck-Debug-9d3b302f37dc285b1e87.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-NightlyStart-Debug-7b5d3bf4e20ff0518c95.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-NightlySubmit-Debug-8491af570f9f16d8f197.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-NightlyTest-Debug-fed47d21ea36df493843.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-NightlyUpdate-Debug-572d125278c9a6e66fcc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/target-tests-Debug-3d5855edabb3935c9343.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-d06480eadcc461d85546.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/CMakeFiles/3.22.1/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/CMakeFiles/3.22.1/CompilerIdC/a.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tests-main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/3.20.2/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/3.20.2/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/3.20.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/3.20.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/3.20.2/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/3.20.2/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdCXX/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/InitA.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/InitA.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/InitA.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/InitA.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/InitA.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/InitA.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/InitA.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/InitA.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/InitA.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/InitA.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/InitA.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/InitA.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/InitA.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/InitA.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/InitA.dir/linklibs.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/InitA.dir/main.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/InitA.dir/objects.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/InitA.dir/objects1.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/InitA.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/InitA.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/InitA.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/InitA.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitA/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/3.20.2/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/3.20.2/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/3.20.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/3.20.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/3.20.2/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/3.20.2/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdCXX/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/InitB.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/InitB.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/InitB.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/InitB.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/InitB.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/InitB.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/InitB.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/InitB.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/InitB.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/InitB.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/InitB.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/InitB.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/InitB.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/InitB.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/InitB.dir/linklibs.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/InitB.dir/main.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/InitB.dir/objects.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/InitB.dir/objects1.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/InitB.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/InitB.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/InitB.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/InitB.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/InitB/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/.cmake/api/v1/reply/cache-v2-d7c60184496b7dc8601c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-1c4fa768ad2cb34cf93c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-15951d0404c1ca3c82e5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/.cmake/api/v1/reply/index-2021-11-25T12-28-14-0599.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/.cmake/api/v1/reply/target-tests-stage-1-Debug-3a6d9ce82380a2c70260.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/.cmake/api/v1/reply/target-tests-stage-2-Debug-320c98cdbe2e09714981.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/.cmake/api/v1/reply/target-tests-stage-3-Debug-bc04979b34f79b1d84c6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/.cmake/api/v1/reply/target-tests-stage-4-Debug-e70cb240187b6b5c3327.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/.cmake/api/v1/reply/target-tests-stage-5-Debug-ee946e350c655103585f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/3.16.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/3.16.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/3.16.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/3.16.3/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-1.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-1.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-1.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-1.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-1.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-1.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-1.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-1.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-1.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-1.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-1.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-1.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-1.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-1.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-1.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-1.dir/tests-main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-1.dir/tests-trie-01.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-1.dir/trie.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-2.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-2.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-2.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-2.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-2.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-2.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-2.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-2.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-2.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-2.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-2.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-2.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-2.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-2.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-2.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-2.dir/test-helpers.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-2.dir/tests-main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-2.dir/tests-trie-02.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-2.dir/trie.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-3.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-3.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-3.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-3.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-3.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-3.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-3.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-3.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-3.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-3.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-3.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-3.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-3.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-3.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-3.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-3.dir/test-helpers.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-3.dir/tests-main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-3.dir/tests-trie-03.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-3.dir/trie.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-4.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-4.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-4.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-4.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-4.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-4.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-4.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-4.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-4.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-4.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-4.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-4.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-4.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-4.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-4.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-4.dir/test-helpers.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-4.dir/tests-main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-4.dir/tests-trie-04.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-4.dir/trie.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-5.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-5.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-5.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-5.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-5.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-5.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-5.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-5.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-5.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-5.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-5.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-5.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-5.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-5.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-5.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-5.dir/test-helpers.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-5.dir/tests-main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-5.dir/tests-trie-05.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CMakeFiles/tests-stage-5.dir/trie.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/CTestTestfile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/List.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/List.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/tests-stage-2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/trie/cmake-build-debug/tests-stage-2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/3.16.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/3.16.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/3.16.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/3.16.3/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/Continuous.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/Continuous.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/Continuous.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/Continuous.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousBuild.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousBuild.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousBuild.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousBuild.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousConfigure.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousConfigure.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousConfigure.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousConfigure.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousCoverage.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousCoverage.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousCoverage.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousCoverage.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousMemCheck.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousMemCheck.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousMemCheck.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousMemCheck.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousStart.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousStart.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousStart.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousStart.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousSubmit.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousSubmit.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousTest.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousTest.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousTest.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousTest.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousUpdate.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousUpdate.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousUpdate.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ContinuousUpdate.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/Experimental.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/Experimental.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/Experimental.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/Experimental.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalBuild.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalBuild.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalBuild.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalBuild.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalConfigure.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalConfigure.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalConfigure.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalConfigure.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalCoverage.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalCoverage.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalCoverage.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalCoverage.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalMemCheck.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalMemCheck.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalMemCheck.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalMemCheck.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalStart.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalStart.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalStart.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalStart.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalSubmit.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalSubmit.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalSubmit.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalSubmit.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalTest.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalTest.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalTest.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalTest.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalUpdate.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalUpdate.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalUpdate.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/ExperimentalUpdate.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/Nightly.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/Nightly.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/Nightly.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/Nightly.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyBuild.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyBuild.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyBuild.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyBuild.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyConfigure.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyConfigure.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyConfigure.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyConfigure.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyCoverage.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyCoverage.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyCoverage.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyCoverage.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyMemCheck.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyMemCheck.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyMemCheck.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyMemCheck.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyMemoryCheck.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyMemoryCheck.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyMemoryCheck.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyMemoryCheck.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyStart.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyStart.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyStart.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyStart.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlySubmit.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlySubmit.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlySubmit.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlySubmit.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyTest.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyTest.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyTest.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyTest.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyUpdate.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyUpdate.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyUpdate.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/NightlyUpdate.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/tests.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/tests.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/tests.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/tests.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/tests.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/tests.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/tests.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/tests.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/tests.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/CMakeFiles/tests.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/DartConfiguration.tcl" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/DartConfiguration.tcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/Jednohubka-01.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/Jednohubka-01.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jednohubky/Init00/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../determinant/cmake-build-debug/.cmake/api/v1/reply/cache-v2-bc451a904d0c5f4dac5c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../determinant/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-7ed8c959d09455872dec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../determinant/cmake-build-debug/.cmake/api/v1/reply/index-2021-12-18T17-30-19-0169.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeFiles/3.21.1/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeFiles/3.21.1/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/CMakeCCompilerId.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/CMakeCCompilerId.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/CMakeCCompilerId.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/CMakeCCompilerId.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeFiles/ShowIncludes/main.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeFiles/ShowIncludes/main.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../determinant/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../determinant/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../determinant/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../determinant/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../determinant/cmake-build-debug/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fraction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Fraction.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fraction.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Fraction.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Matrix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Matrix.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Matrix.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Matrix.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.cmake/api/v1/reply/cache-v2-5833d7c71baab1d07099.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.cmake/api/v1/reply/cmakeFiles-v1-b4fae6bf1ac34692ff18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.cmake/api/v1/reply/codemodel-v2-062db0891226d65e5434.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.cmake/api/v1/reply/index-2022-01-08T13-42-01-0194.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.cmake/api/v1/reply/target-vypocet_determinantu-Debug-e1317dd4f5f84f876d07.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-27537c17369e59fef0c7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-9a4c1a96e6036ac96ae8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-de578ffadc3f4773ff84.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2021-12-25T13-54-31-0051.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-vypocet_determinantu-Debug-076c35a5f6b7f6911ba5.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vypocet_determinantu.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vypocet_determinantu.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vypocet_determinantu" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vypocet_determinantu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vypocet_determinantu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vypocet_determinantu.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vypocet_determinantu.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vypocet_determinantu.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vypocet_determinantu.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vypocet_determinantu.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vypocet_determinantu.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileReader.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/3.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matrixHelper.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/matrixHelper.hpp" afterDir="false" />
     </list>
@@ -29,13 +462,22 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
     <option name="majorVersion" value="2021" />
     <option name="minorVersion" value="3.2" />
   </component>
   <component name="ProjectId" id="23PwxGn4odA5ATymcNbyYoQmlMh" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -43,6 +485,7 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
@@ -50,6 +493,78 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
+    <property name="ctest.advertisement.all.test.configuration.is.created" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Vysoka_Skola\3.Semestr\PJC\Projekty\b211_bd6b36pjc\Semestral project\vypocet_determinantu\tests" />
+      <recent name="D:\Vysoka_Skola\3.Semestr\PJC\Projekty\b211_bd6b36pjc\Semestral project\vypocet_determinantu\test" />
+      <recent name="D:\Vysoka_Skola\3.Semestr\PJC\Projekty\b211_bd6b36pjc\Semestral project\vypocet_determinantu" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Vysoka_Skola\3.Semestr\PJC\Projekty\b211_bd6b36pjc\Semestral project\vypocet_determinantu\test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Catch.basic matrix">
+    <configuration name="Basic (1)" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="vypocet_determinantu" TARGET_NAME="tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="vypocet_determinantu" RUN_TARGET_NAME="tests" TEST_METHOD="Basic" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Basic" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="vypocet_determinantu" TARGET_NAME="tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="vypocet_determinantu" RUN_TARGET_NAME="tests" TEST_CLASS="[all]" TEST_METHOD="Basic" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="basic matrix" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="vypocet_determinantu" TARGET_NAME="vypocet_determinantu" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="vypocet_determinantu" RUN_TARGET_NAME="vypocet_determinantu" TEST_METHOD="basic matrix" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="vypocet_determinantu" type="CMakeRunConfiguration" factoryName="Application" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="vypocet_determinantu" TARGET_NAME="vypocet_determinantu" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="vypocet_determinantu" RUN_TARGET_NAME="vypocet_determinantu">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All CTest" type="CTestRunConfiguration" factoryName="CTestRun" PROGRAM_PARAMS="--extra-verbose" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$CMakeCurrentLocalGenerationDir$" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_PATH="$CTestCurrentExecutableName$" EXPLICIT_BUILD_TARGET_NAME="all" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tests" type="CTestRunConfiguration" factoryName="CTestRun" temporary="true" PROGRAM_PARAMS="--extra-verbose" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$CMakeCurrentLocalGenerationDir$" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_PATH="$CTestCurrentExecutableName$" EXPLICIT_BUILD_TARGET_NAME="all" TEST_METHOD="tests" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Catch.basic matrix" />
+      <item itemvalue="Catch.Basic" />
+      <item itemvalue="Catch.Basic (1)" />
+      <item itemvalue="CMake Application.vypocet_determinantu" />
+      <item itemvalue="CTest Application.All CTest" />
+      <item itemvalue="CTest Application.tests" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Catch.basic matrix" />
+        <item itemvalue="Catch.Basic (1)" />
+        <item itemvalue="Catch.Basic" />
+        <item itemvalue="CMake Application.vypocet_determinantu" />
+        <item itemvalue="CTest Application.tests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -61,10 +576,27 @@
       <updated>1641649281007</updated>
       <workItem from="1641649282357" duration="22000" />
       <workItem from="1641649672536" duration="90000" />
+      <workItem from="1641653162790" duration="6000" />
+      <workItem from="1641654634888" duration="8111000" />
+      <workItem from="1641666934352" duration="7000000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

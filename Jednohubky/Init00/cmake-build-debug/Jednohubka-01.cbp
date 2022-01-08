@@ -11,70 +11,10 @@
 				<Option working_dir="/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="test">
-				<Option working_dir="/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Experimental">
-				<Option working_dir="/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 Experimental"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Continuous">
-				<Option working_dir="/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 Continuous"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Nightly">
-				<Option working_dir="/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 Nightly"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tests">
@@ -84,19 +24,19 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 tests"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 tests"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tests/fast">
@@ -106,19 +46,79 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 tests/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 tests/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Experimental">
+				<Option working_dir="/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 Experimental"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Nightly">
+				<Option working_dir="/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 Nightly"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Continuous">
+				<Option working_dir="/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 Continuous"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/Vysoka_Skola/3.Semestr/PJC/Projekty/b211_bd6b36pjc/Jednohubky/Init00/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>

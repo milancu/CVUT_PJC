@@ -1,17 +1,15 @@
 //
 // Created by Milan on 18.12.2021.
 //
+#ifndef VYPOCET_DETERMINANTU_MATRIXHELPER_HPP
+#define VYPOCET_DETERMINANTU_MATRIXHELPER_HPP
 
 #include <cmath>
 #include <iostream>
 #include <algorithm>
 #include <random>
 #include "Matrix.hpp"
-
-#ifndef VYPOCET_DETERMINANTU_MATRIXHELPER_HPP
-#define VYPOCET_DETERMINANTU_MATRIXHELPER_HPP
-
-#endif //VYPOCET_DETERMINANTU_MATRIXHELPER_HPP
+#include "Fraction.cpp"
 
 namespace matrixHelper {
     bool isMatrixValid(int size) {
@@ -51,12 +49,12 @@ namespace matrixHelper {
 
     int get_random_int() {
         static std::mt19937 mt{std::random_device{}()};
-        static std::uniform_real_distribution<> dist(-15, 15);
+        static std::uniform_real_distribution<> dist(-10, 10);
         return dist(mt);
     }
 
     std::vector<std::vector<Fraction>> generateRandomValues() {
-        int dimension = 4; //In future make it random, right now for testing 5 is good
+        int dimension = 3; //In future make it random, right now for testing 5 is good
 
         std::vector<std::vector<Fraction>> result;
         std::vector<Fraction> subVector;
@@ -70,6 +68,6 @@ namespace matrixHelper {
         }
         return result;
     }
-
-
 }
+
+#endif

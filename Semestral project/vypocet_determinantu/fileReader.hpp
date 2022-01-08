@@ -1,15 +1,12 @@
 //
 // Created by Milan on 18.12.2021.
 //
+#ifndef VYPOCET_DETERMINANTU_FILEREADER_HPP
+#define VYPOCET_DETERMINANTU_FILEREADER_HPP
 
 #include <iostream>
 #include <vector>
 #include "Fraction.hpp"
-
-#ifndef VYPOCET_DETERMINANTU_FILEREADER_HPP
-#define VYPOCET_DETERMINANTU_FILEREADER_HPP
-
-#endif //VYPOCET_DETERMINANTU_FILEREADER_HPP
 
 namespace fileReader {
 
@@ -42,3 +39,6 @@ namespace fileReader {
         return result;
     }
 }
+
+
+#endif

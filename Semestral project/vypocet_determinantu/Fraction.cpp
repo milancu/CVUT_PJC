@@ -1,7 +1,6 @@
 //
 // Created by Milan on 24.12.2021.
 //
-
 #include "Fraction.hpp"
 
 Fraction::Fraction(int numerator, int denominator) : numerator(numerator), denominator(denominator) {}
@@ -50,31 +49,25 @@ Fraction operator*(const Fraction &rhs, const Fraction &lhs) {
     return {rhs.numerator * lhs.numerator, rhs.denominator * lhs.denominator};
 }
 
+int gcd(int a, int b) {
+    if (b == 0)
+        return a;
+    return gcd(b, a % b);
+}
+
 void Fraction::simplify() {
     int divider = gcd(this->numerator, this->denominator);
     this->numerator = this->numerator / divider;
     this->denominator = this->denominator / divider;
 }
 
-int Fraction::gcd(int a, int b) {
-    a = abs(a);
-    b = abs(b);
-    if (a == 0) return b;
-    if (b == 0) return a;
-    if (a == b) return a;
-
-    if (a > b) return gcd(a - b, b);
-
-    return gcd(a, b - a);
-}
-
 std::ostream &operator<<(std::ostream &os, const Fraction &fraction) {
-    if(fraction.denominator == 1){
+    if (fraction.denominator == 1) {
         return os << fraction.numerator;
-    } else if(fraction.numerator == 0){
+    } else if (fraction.numerator == 0) {
         return os << 0;
     }
-    return os << fraction.numerator <<"/"<< fraction.denominator;
+    return os << fraction.numerator << "/" << fraction.denominator;
 }
 
 Fraction operator/(const Fraction &rhs, const Fraction &lhs) {
@@ -90,35 +83,35 @@ bool Fraction::operator!=(const int &rhs) const {
 }
 
 bool Fraction::operator<(const int &rhs) const {
-    return this->numerator/this->denominator < rhs;
+    return this->numerator / this->denominator < rhs;
 }
 
 bool Fraction::operator>(const int &rhs) const {
-    return this->numerator/this->denominator > rhs;
+    return this->numerator / this->denominator > rhs;
 }
 
 bool Fraction::operator<=(const int &rhs) const {
-    return this->numerator/this->denominator <= rhs;
+    return this->numerator / this->denominator <= rhs;
 }
 
 bool Fraction::operator>=(const int &rhs) const {
-    return this->numerator/this->denominator >= rhs;
+    return this->numerator / this->denominator >= rhs;
 }
 
 bool Fraction::operator<(const Fraction &rhs) const {
-    return numerator/denominator < rhs.numerator/rhs.denominator;
+    return numerator / denominator < rhs.numerator / rhs.denominator;
 }
 
 bool Fraction::operator>(const Fraction &rhs) const {
-    return numerator/denominator > rhs.numerator/rhs.denominator;
+    return numerator / denominator > rhs.numerator / rhs.denominator;
 }
 
 bool Fraction::operator<=(const Fraction &rhs) const {
-    return numerator/denominator <= rhs.numerator/rhs.denominator;
+    return numerator / denominator <= rhs.numerator / rhs.denominator;
 }
 
 bool Fraction::operator>=(const Fraction &rhs) const {
-    return numerator/denominator >= rhs.numerator/rhs.denominator;
+    return numerator / denominator >= rhs.numerator / rhs.denominator;
 }
 
 
@@ -126,8 +119,12 @@ Fraction Fraction::absoluteFraction(const Fraction &rhs) {
     return {abs(rhs.numerator), rhs.denominator};
 }
 
-int Fraction::toInt() {
-    return numerator/denominator;
+int Fraction::toInt() const {
+    return numerator / denominator;
+}
+
+bool operator==(const Fraction &rhs, const Fraction &lhs) {
+    return rhs.numerator == lhs.numerator && rhs.denominator == lhs.denominator;
 }
 
 
