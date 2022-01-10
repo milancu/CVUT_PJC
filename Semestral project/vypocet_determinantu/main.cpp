@@ -154,7 +154,7 @@ void readFromFile() {
     std::vector<std::vector<long double>> values;
 
     std::cerr << "!!!Zvoleny soubor musi byt ulozeny ve slozce files/" << std::endl;
-    std::cout << "Zadejte nazev souboru, napriklad matice1.txt" << std::endl;
+    std::cout << "Zadejte nazev souboru, napriklad 5.txt" << std::endl;
     std::cin >> fileName;
     inFile.open("../files/" + fileName);
 

@@ -12,10 +12,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f76cc9d1-9fd3-4038-80b7-0096577aece2" name="Changes" comment="add unit test">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+    <list default="true" id="f76cc9d1-9fd3-4038-80b7-0096577aece2" name="Changes" comment="add README.md">
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +151,7 @@
       <workItem from="1641717044667" duration="23007000" />
       <workItem from="1641801339504" duration="12658000" />
       <workItem from="1641819576600" duration="12747000" />
-      <workItem from="1641845102161" duration="2736000" />
+      <workItem from="1641845102161" duration="3258000" />
     </task>
     <task id="LOCAL-00001" summary="modules">
       <created>1641674199318</created>
@@ -169,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641847370473</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add README.md">
+      <created>1641847989703</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1641847989703</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +195,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="modules" />
     <MESSAGE value="add unit test" />
-    <option name="LAST_COMMIT_MESSAGE" value="add unit test" />
+    <MESSAGE value="add README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="add README.md" />
   </component>
 </project>
