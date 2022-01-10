@@ -7,19 +7,19 @@
 #include <ostream>
 
 class Fraction {
-    int numerator;
-    int denominator;
+    long long int numerator;
+    long long int denominator;
 
 public:
-    Fraction(int numerator, int denominator);
+    Fraction(long long int numerator, long long int denominator);
 
-    int getNumerator() const;
+    long long int getNumerator() const;
 
-    void setNumerator(int numerator);
+    void setNumerator(long long int numerator);
 
-    int getDenominator() const;
+    long long int getDenominator() const;
 
-    void setDenominator(int denominator);
+    void setDenominator(long long int enominator);
 
     void simplify();
 

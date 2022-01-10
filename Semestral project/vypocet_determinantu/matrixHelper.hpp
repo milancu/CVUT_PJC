@@ -22,17 +22,16 @@ namespace matrixHelper {
 
     int numDigits(int number) {
         int count = 0;
-        while (number != 0)
-        {
+        while (number != 0) {
             number = number / 10;
             ++count;
         }
-        return count+2;
+        return count + 2;
     }
 
     int getSizeofTheBigestValue(const Matrix &matrix, int column) {
-        Fraction max = {-std::numeric_limits<int>::infinity(), 1};
-        Fraction min = {std::numeric_limits<int>::infinity(), 1};
+        long double max = -std::numeric_limits<int>::infinity();
+        long double min = std::numeric_limits<int>::infinity();
         for (int i = 0; i < matrix.getDimension(); i++) {
             if (matrix.getValues().at(i).at(column) > max) {
                 max = matrix.getValues().at(i).at(column);
@@ -41,27 +40,34 @@ namespace matrixHelper {
                 min = matrix.getValues().at(i).at(column);
             }
         }
-        if (min.absoluteFraction(min) > max) {
-            return numDigits(min.toInt());
+        if ((-min) > max) {
+            return numDigits(min) + 9;
         }
-        return numDigits(max.toInt());
+        return numDigits(max) + 9;
     }
 
     int get_random_int() {
         static std::mt19937 mt{std::random_device{}()};
-        static std::uniform_real_distribution<> dist(-10, 10);
+        static std::uniform_real_distribution<> dist(-15, 15);
         return dist(mt);
     }
 
-    std::vector<std::vector<Fraction>> generateRandomValues() {
-        int dimension = 3; //In future make it random, right now for testing 5 is good
+    int get_random_dimension() {
+        static std::mt19937 mt{std::random_device{}()};
+        static std::uniform_real_distribution<> dist(200, 1000);
+        return dist(mt);
+    }
 
-        std::vector<std::vector<Fraction>> result;
-        std::vector<Fraction> subVector;
+    std::vector<std::vector<long double>> generateRandomValues() {
+        int dimension = get_random_dimension(); //In future make it random, right now for testing 5 is good
+
+        std::vector<std::vector<long double>> result;
+        std::vector<long double> subVector;
 
         for (int i = 0; i < dimension; i++) {
             for (int j = 0; j < dimension; j++) {
-                subVector.emplace_back(get_random_int(), 1);
+//                subVector.emplace_back(get_random_int(), 1);
+                subVector.push_back(get_random_int());
             }
             result.push_back(subVector);
             subVector.clear();

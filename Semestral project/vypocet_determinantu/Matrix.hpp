@@ -10,7 +10,7 @@
 
 class Matrix {
 public:
-    explicit Matrix(const std::vector<std::vector<Fraction>>& inputValues);
+    explicit Matrix(const std::vector<std::vector<long double>>& inputValues);
 
     ~Matrix() = default;
 
@@ -18,11 +18,19 @@ public:
 
     void simplify();
 
-    Fraction compute();
+    long double compute();
+
+    void changeValue(int x, int y, int newValue);
 
     void gaus_elimination();
 
-    const std::vector<std::vector<Fraction>> &getValues() const;
+    void gaus_eliminationParralel();
+
+    static void editRow(std::vector<long double> &base, std::vector<long double> &to_change, unsigned long position);
+
+    static void thread_editRow(std::vector<std::vector<long double>>& matrix, int from, int to, unsigned long position);
+
+    const std::vector<std::vector<long double>> &getValues() const;
 
     friend std::ostream &operator<<(std::ostream &os, const Matrix &matrix);
 
@@ -30,7 +38,7 @@ public:
     int getDimension() const;
 
 private:
-    std::vector<std::vector<Fraction>> values;
+    std::vector<std::vector<long double>> values;
     int dimension;
 };
 

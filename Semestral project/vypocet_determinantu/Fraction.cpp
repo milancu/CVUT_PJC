@@ -3,21 +3,22 @@
 //
 #include "Fraction.hpp"
 
-Fraction::Fraction(int numerator, int denominator) : numerator(numerator), denominator(denominator) {}
+Fraction::Fraction(long long int numerator, long long int denominator) : numerator(numerator),
+                                                                         denominator(denominator) {}
 
-int Fraction::getNumerator() const {
+long long int Fraction::getNumerator() const {
     return numerator;
 }
 
-void Fraction::setNumerator(int numeratorToSet) {
+void Fraction::setNumerator(long long int numeratorToSet) {
     Fraction::numerator = numeratorToSet;
 }
 
-int Fraction::getDenominator() const {
+long long int Fraction::getDenominator() const {
     return denominator;
 }
 
-void Fraction::setDenominator(int denominatorToSet) {
+void Fraction::setDenominator(long long int denominatorToSet) {
     Fraction::denominator = denominatorToSet;
 }
 

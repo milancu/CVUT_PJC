@@ -1,3 +1,4 @@
-ToolSet: Ubuntu Jammy Jellyfish (development branch) (local)Options: 
+ToolSet: 17.0 (local)@C:\Program Files\Microsoft Visual Studio\2022\Preview
+Options: 
 
 Options:

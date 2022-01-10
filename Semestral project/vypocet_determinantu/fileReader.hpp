@@ -10,25 +10,26 @@
 
 namespace fileReader {
 
-    std::vector<Fraction> readMatrixFromFile(std::fstream &inputFile) {
+    std::vector<long double> readMatrixFromFile(std::fstream &inputFile) {
 
         if (!inputFile) {
             std::cout << "Failed to open data file!\n";
             exit(1);
         }
 
-        std::vector<Fraction> result;
+        std::vector<long double> result;
         int value = 0;
 
         while (inputFile >> value) {
-            result.emplace_back(value, 1);
+//            result.emplace_back(value, 1);
+            result.push_back(value);
         }
         return result;
     }
 
-    std::vector<std::vector<Fraction>> fillVector(std::vector<Fraction> &values, int dimensions) {
-        std::vector<std::vector<Fraction>> result;
-        std::vector<Fraction> subVector;
+    std::vector<std::vector<long double>> fillVector(std::vector<long double> &values, int dimensions) {
+        std::vector<std::vector<long double>> result;
+        std::vector<long double> subVector;
         for (int i = 0; i < values.size(); i++) {
             subVector.push_back(values.at(i));
             if ((i + 1) % dimensions == 0) {
